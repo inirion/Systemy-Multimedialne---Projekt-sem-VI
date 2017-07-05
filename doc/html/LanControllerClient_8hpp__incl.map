@@ -1,0 +1,16 @@
+<map id="LanControllerClient.hpp" name="LanControllerClient.hpp">
+<area shape="rect" id="node2" href="$PaddleController_8hpp.html" title="Definicja klasy PaddleController. " alt="" coords="677,80,819,107"/>
+<area shape="rect" id="node19" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="861,80,947,107"/>
+<area shape="rect" id="node23" href="$Client_8hpp.html" title="Definicja klasy Client dziedziczącej po Networking. " alt="" coords="984,80,1064,107"/>
+<area shape="rect" id="node3" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="476,304,609,331"/>
+<area shape="rect" id="node11" href="$Puck_8hpp.html" title="Definicja klasy Puck dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="223,155,300,181"/>
+<area shape="rect" id="node6" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="828,379,903,405"/>
+<area shape="rect" id="node9" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="599,379,655,405"/>
+<area shape="rect" id="node10" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="679,379,804,405"/>
+<area shape="rect" id="node7" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="876,453,999,480"/>
+<area shape="rect" id="node8" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="733,453,851,480"/>
+<area shape="rect" id="node14" href="$DynamicObject2d_8hpp.html" title="Definicja bazowej klasy DynamicObject2d dziedziczącej po Object2d. " alt="" coords="103,304,254,331"/>
+<area shape="rect" id="node18" href="$Paddle_8hpp.html" title="Definicja klasy Paddle dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="218,229,305,256"/>
+<area shape="rect" id="node15" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="129,379,228,405"/>
+<area shape="rect" id="node21" href="$Networking_8hpp.html" title="Definicja generycznej klasy Networking. " alt="" coords="1010,155,1121,181"/>
+</map>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Plik źródłowy Pressable.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Pressable.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Pressable_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Pressable.hpp</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 21.04.2017</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: jakub</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef PRESSABLE_HPP_</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define PRESSABLE_HPP_</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HaveHover_8hpp.html">HaveHover.hpp</a>&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HavePressed_8hpp.html">HavePressed.hpp</a>&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HaveVisible_8hpp.html">HaveVisible.hpp</a>&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HaveFocus_8hpp.html">HaveFocus.hpp</a>&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HaveAction_8hpp.html">HaveAction.hpp</a>&quot;</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPressable.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPressable.html">Pressable</a> : <span class="keyword">public</span> <a class="code" href="classHaveAction.html">HaveAction</a>&lt;T&gt;, <span class="keyword">public</span> <a class="code" href="classHaveHover.html">HaveHover</a>, <span class="keyword">public</span> <a class="code" href="classHavePressed.html">HavePressed</a>, <span class="keyword">public</span> <a class="code" href="classHaveVisible.html">HaveVisible</a>, <span class="keyword">public</span> <a class="code" href="classHaveFocus.html">HaveFocus</a>{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classPressable.html">Pressable</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> setPressed(<span class="keywordtype">bool</span> pressed);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    sf::Keyboard::Key getHotKey() <span class="keyword">const</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> setHotKey(sf::Keyboard::Key hotKey);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> update(sf::Vector2f pointerPos=sf::Vector2f(0.f,0.f), <span class="keywordtype">bool</span> pressed=<span class="keyword">false</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    sf::Keyboard::Key hotKey;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> hotPress;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PRESSABLE_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="HaveVisible_8hpp_html"><div class="ttname"><a href="HaveVisible_8hpp.html">HaveVisible.hpp</a></div><div class="ttdoc">Definicja bazowej klasy HaveVisible. </div></div>
+<div class="ttc" id="classHaveVisible_html"><div class="ttname"><a href="classHaveVisible.html">HaveVisible</a></div><div class="ttdoc">Bazowa klasa obiektu posiadający stan widoczności. </div><div class="ttdef"><b>Definition:</b> HaveVisible.hpp:22</div></div>
+<div class="ttc" id="HaveAction_8hpp_html"><div class="ttname"><a href="HaveAction_8hpp.html">HaveAction.hpp</a></div><div class="ttdoc">Definicja bazowej generycznej klasy HaveAction. </div></div>
+<div class="ttc" id="HavePressed_8hpp_html"><div class="ttname"><a href="HavePressed_8hpp.html">HavePressed.hpp</a></div><div class="ttdoc">Definicja bazowej klasy HavePressed. </div></div>
+<div class="ttc" id="classHaveHover_html"><div class="ttname"><a href="classHaveHover.html">HaveHover</a></div><div class="ttdoc">Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. </div><div class="ttdef"><b>Definition:</b> HaveHover.hpp:24</div></div>
+<div class="ttc" id="HaveFocus_8hpp_html"><div class="ttname"><a href="HaveFocus_8hpp.html">HaveFocus.hpp</a></div><div class="ttdoc">Definicja bazowej klasy HaveFocus. </div></div>
+<div class="ttc" id="HaveHover_8hpp_html"><div class="ttname"><a href="HaveHover_8hpp.html">HaveHover.hpp</a></div><div class="ttdoc">Definicja bazowej klasy HaveHover dziedziczącej po Object2d. </div></div>
+<div class="ttc" id="classHaveAction_html"><div class="ttname"><a href="classHaveAction.html">HaveAction</a></div><div class="ttdoc">Bazowa klasa obiektu z ustawialną akcją typu std::function&lt;void(T)&gt; </div><div class="ttdef"><b>Definition:</b> HaveAction.hpp:47</div></div>
+<div class="ttc" id="classPressable_html"><div class="ttname"><a href="classPressable.html">Pressable</a></div><div class="ttdoc">Bazowa klasa obiektu wciskalnego. </div><div class="ttdef"><b>Definition:</b> Pressable.hpp:30</div></div>
+<div class="ttc" id="classHaveFocus_html"><div class="ttname"><a href="classHaveFocus.html">HaveFocus</a></div><div class="ttdoc">Bazowa klasa obiektu &quot;focusowalnego&quot;. </div><div class="ttdef"><b>Definition:</b> HaveFocus.hpp:23</div></div>
+<div class="ttc" id="classHavePressed_html"><div class="ttname"><a href="classHavePressed.html">HavePressed</a></div><div class="ttdoc">Bazowa klasa obiektu posiadający stan wciśnięcia. </div><div class="ttdef"><b>Definition:</b> HavePressed.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

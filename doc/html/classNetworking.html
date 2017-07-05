@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Dokumentacja szablonu klasy Networking&lt; T &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-attribs">Atrybuty chronione</a> &#124;
+<a href="classNetworking-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja szablonu klasy Networking&lt; T &gt;<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Abstrakcyjna klasa bazowa dla <a class="el" href="classClient.html" title="Klasa klienta gry. ">Client</a> i <a class="el" href="classServer.html" title="Klasa służąca do nawiązania połączenia oraz komunikacji z klientem. ">Server</a>.  
+ <a href="classNetworking.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Networking_8hpp_source.html">Networking.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla Networking&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNetworking__coll__graph.png" border="0" usemap="#Networking_3_01T_01_4_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a href="graph_legend.html">legenda</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a966acfc5ef5c7e2da899938712cc07c2"><td class="memItemLeft" align="right" valign="top"><a id="a966acfc5ef5c7e2da899938712cc07c2"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Send</b> (sf::Packet)=0</td></tr>
+<tr class="separator:a966acfc5ef5c7e2da899938712cc07c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d90ca20a03ada45e58a16279d77f14"><td class="memItemLeft" align="right" valign="top"><a id="aa3d90ca20a03ada45e58a16279d77f14"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Recive</b> (sf::Packet &amp;)=0</td></tr>
+<tr class="separator:aa3d90ca20a03ada45e58a16279d77f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6aa6bc15e66ce90768783caa1b3e75"><td class="memItemLeft" align="right" valign="top"><a id="ada6aa6bc15e66ce90768783caa1b3e75"></a>
+sf::Packet &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (sf::Packet &amp;packet)</td></tr>
+<tr class="separator:ada6aa6bc15e66ce90768783caa1b3e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfcd9c12ccca32fd3d3ef654571648ab"><td class="memItemLeft" align="right" valign="top"><a id="abfcd9c12ccca32fd3d3ef654571648ab"></a>
+sf::Packet &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getPacket</b> ()</td></tr>
+<tr class="separator:abfcd9c12ccca32fd3d3ef654571648ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee29075c2a6dea0c2beb48ccebddb030"><td class="memItemLeft" align="right" valign="top"><a id="aee29075c2a6dea0c2beb48ccebddb030"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>clearPacket</b> ()</td></tr>
+<tr class="separator:aee29075c2a6dea0c2beb48ccebddb030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dfaa2bd4306260355759a0018f09403"><td class="memItemLeft" align="right" valign="top"><a id="a6dfaa2bd4306260355759a0018f09403"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Networking</b> (const unsigned short port)</td></tr>
+<tr class="separator:a6dfaa2bd4306260355759a0018f09403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Atrybuty chronione</h2></td></tr>
+<tr class="memitem:a61da4025b88457b56c040f5a4627abe7"><td class="memItemLeft" align="right" valign="top"><a id="a61da4025b88457b56c040f5a4627abe7"></a>
+unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="separator:a61da4025b88457b56c040f5a4627abe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a989cabae3d4ef01ca650e024a77731cc"><td class="memItemLeft" align="right" valign="top"><a id="a989cabae3d4ef01ca650e024a77731cc"></a>
+sf::Packet&#160;</td><td class="memItemRight" valign="bottom"><b>packet</b></td></tr>
+<tr class="separator:a989cabae3d4ef01ca650e024a77731cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcca764d884d3c0e367c5411a3076e68"><td class="memItemLeft" align="right" valign="top"><a id="abcca764d884d3c0e367c5411a3076e68"></a>
+T&#160;</td><td class="memItemRight" valign="bottom"><b>socket</b></td></tr>
+<tr class="separator:abcca764d884d3c0e367c5411a3076e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class Networking&lt; T &gt;</h3>
+
+<p>Abstrakcyjna klasa bazowa dla <a class="el" href="classClient.html" title="Klasa klienta gry. ">Client</a> i <a class="el" href="classServer.html" title="Klasa służąca do nawiązania połączenia oraz komunikacji z klientem. ">Server</a>. </p>
+</div><hr/>Dokumentacja dla tej klasy została wygenerowana z pliku:<ul>
+<li><a class="el" href="Networking_8hpp_source.html">Networking.hpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

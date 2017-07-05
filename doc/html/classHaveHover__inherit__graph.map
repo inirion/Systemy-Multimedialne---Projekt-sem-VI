@@ -1,0 +1,10 @@
+<map id="HaveHover" name="HaveHover">
+<area shape="rect" id="node3" href="$classPressable.html" title="Bazowa klasa obiektu wciskalnego. " alt="" coords="5,155,117,181"/>
+<area shape="rect" id="node4" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="141,155,360,181"/>
+<area shape="rect" id="node6" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="384,155,512,181"/>
+<area shape="rect" id="node2" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="213,5,288,32"/>
+<area shape="rect" id="node5" href="$classMenuButton.html" title="Klasa przycisku menu. " alt="" coords="205,229,297,256"/>
+<area shape="rect" id="node7" href="$classTextInput.html" title="Klasa reprezentująca jednoliniowe edytowalne pole tekstowe. " alt="" coords="365,229,443,256"/>
+<area shape="rect" id="node8" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="467,229,573,256"/>
+<area shape="rect" id="node9" href="$classTrackBar.html" title="Generyczna klasa TrackBar&#39;a. " alt="" coords="467,304,573,331"/>
+</map>

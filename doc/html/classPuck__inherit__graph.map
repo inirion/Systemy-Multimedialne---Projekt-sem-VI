@@ -1,0 +1,4 @@
+<map id="Puck" name="Puck">
+<area shape="rect" id="node3" href="$classDynamicObject2d.html" title="Bazowa klasa dynamicznego obiektu. " alt="" coords="125,80,250,107"/>
+<area shape="rect" id="node4" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="150,5,225,32"/>
+</map>

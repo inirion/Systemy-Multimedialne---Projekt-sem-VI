@@ -1,0 +1,5 @@
+<map id="PaddleController" name="PaddleController">
+<area shape="rect" id="node2" href="$classAIController.html" title="Klasa kontrolera paletki. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$classLanControllerClient.html" title="Klasa sieciowego kontrolera paletki przeciwnika po stronie klienta. " alt="" coords="120,80,251,107"/>
+<area shape="rect" id="node4" href="$classLanControllerServer.html" title="Klasa sieciowego kontrolera paletki przeciwnika po stronie serwera. " alt="" coords="275,80,411,107"/>
+</map>

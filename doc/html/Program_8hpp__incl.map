@@ -1,0 +1,34 @@
+<map id="Program.hpp" name="Program.hpp">
+<area shape="rect" id="node12" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="653,379,728,405"/>
+<area shape="rect" id="node15" href="$ConfigurationManager_8hpp.html" title="Definicja klasy ConfigurationManager oraz struktury ConfigurationObjects. " alt="" coords="1275,155,1448,181"/>
+<area shape="rect" id="node19" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="1932,379,1988,405"/>
+<area shape="rect" id="node20" href="$TextInput_8hpp.html" title="Definicja klasy TextInput dziedziczącej po sf::Drawable i Pressable. " alt="" coords="2550,229,2653,256"/>
+<area shape="rect" id="node24" href="$TrackBar_8hpp.html" title="Definicja klasy TrackBarBase dziedziczącej po sf::Drawable, HaveFocus i Pressable oraz definicja klas..." alt="" coords="3109,155,3209,181"/>
+<area shape="rect" id="node28" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="2063,304,2196,331"/>
+<area shape="rect" id="node29" href="$ButtonView_8hpp.html" title="Definicja klasy ButtonView dziedziczącej po sf::Drawable. " alt="" coords="2221,155,2334,181"/>
+<area shape="rect" id="node31" href="$UniCameraPointer_8hpp.html" title="Definicja klasy UniPointer. " alt="" coords="2053,229,2205,256"/>
+<area shape="rect" id="node32" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="612,80,703,107"/>
+<area shape="rect" id="node33" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="452,155,537,181"/>
+<area shape="rect" id="node34" href="$Client_8hpp.html" title="Definicja klasy Client dziedziczącej po Networking. " alt="" coords="348,155,428,181"/>
+<area shape="rect" id="node35" href="$MenuMain_8hpp.html" title="Definicja klasy MenuMain dziedziczącej po ButtonView. " alt="" coords="1703,80,1809,107"/>
+<area shape="rect" id="node36" href="$MenuOptionsFirst_8hpp.html" title="Definicja klasy MenuOptionsFirst dziedziczącej po ButtonView. " alt="" coords="1834,80,1985,107"/>
+<area shape="rect" id="node37" href="$MenuOptionsSecond_8hpp.html" title="Definicja klasy MenuOptionsSecond dziedziczącej po ButtonView. " alt="" coords="2009,80,2177,107"/>
+<area shape="rect" id="node38" href="$MenuDefaultsAsk_8hpp.html" title="Definicja klasy MenuDefaultsAsk dziedziczącej po ButtonView. " alt="" coords="2202,80,2353,107"/>
+<area shape="rect" id="node39" href="$MenuPaint_8hpp.html" title="Definicja klasy MenuPaint dziedziczącej po ButtonView. " alt="" coords="2377,80,2487,107"/>
+<area shape="rect" id="node40" href="$MenuHockey_8hpp.html" title="Definicja klasy MenuHockey dziedziczącej po ButtonView. " alt="" coords="2511,80,2633,107"/>
+<area shape="rect" id="node41" href="$MenuHockeyMulti_8hpp.html" title="Definicja klasy MenuHockeyMulti dziedziczącej po ButtonView. " alt="" coords="2658,80,2809,107"/>
+<area shape="rect" id="node42" href="$MenuHockeyConnectServer_8hpp.html" title="Definicja klasy MenuHockeyConnectServer dziedziczącej po ButtonView. " alt="" coords="727,80,937,107"/>
+<area shape="rect" id="node43" href="$Broadcaster_8hpp.html" title="Definicja klasy Broadcaster dziedziczącej po Networking. " alt="" coords="871,155,988,181"/>
+<area shape="rect" id="node44" href="$MenuHockeyCreateServer_8hpp.html" title="Definicja klasy MenuHockeyCreateServer dziedziczącej po ButtonView. " alt="" coords="2833,80,3031,107"/>
+<area shape="rect" id="node45" href="$MenuHockeyCreateSideBySide_8hpp.html" title="Definicja klasy MenuHockeyCreateSideBySide dziedziczącej po ButtonView. " alt="" coords="3056,80,3285,107"/>
+<area shape="rect" id="node46" href="$MenuHockeyLobby_8hpp.html" title="Definicja klasy MenuHockeyLobby dziedziczącej po ButtonView. " alt="" coords="1063,80,1222,107"/>
+<area shape="rect" id="node47" href="$MenuHockeyWin_8hpp.html" title="Definicja klasy MenuHockeyWin dziedziczącej po ButtonView. " alt="" coords="3310,80,3455,107"/>
+<area shape="rect" id="node48" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="145,80,301,107"/>
+<area shape="rect" id="node49" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="325,80,486,107"/>
+<area shape="rect" id="node50" href="$AIController_8hpp.html" title="Definicja klasy AIController dziedziczącej po PaddleController. " alt="" coords="3733,80,3848,107"/>
+<area shape="rect" id="node13" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="557,453,680,480"/>
+<area shape="rect" id="node14" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="705,453,823,480"/>
+<area shape="rect" id="node21" href="$Pressable_8hpp.html" title="Definicja bazowej klasy Pressable dziedziczącej po HaveAction, HaveHover, HavePressed, HaveVisible i HaveFocus. " alt="" coords="2535,304,2641,331"/>
+<area shape="rect" id="node22" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="2167,379,2292,405"/>
+<area shape="rect" id="node27" href="$HaveName_8hpp.html" title="Definicja bazowej klasy HaveName. " alt="" coords="2351,229,2462,256"/>
+</map>

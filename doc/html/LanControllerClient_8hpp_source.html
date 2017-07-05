@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Plik źródłowy LanControllerClient.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">LanControllerClient.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="LanControllerClient_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * LanControllerClient.hpp</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 20.04.2017</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: Grzeogorz</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef LANCONTROLLERCLIENT_HPP_</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define LANCONTROLLERCLIENT_HPP_</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PaddleController_8hpp.html">PaddleController.hpp</a>&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Server_8hpp.html">Server.hpp</a>&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Client_8hpp.html">Client.hpp</a>&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classLanControllerClient.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLanControllerClient.html">LanControllerClient</a> : <span class="keyword">public</span> <a class="code" href="classPaddleController.html">PaddleController</a> {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classLanControllerClient.html">LanControllerClient</a>(<a class="code" href="classClient.html">Client</a> &amp;c);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> update(<a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; enemyPointer, <a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; pointer, <a class="code" href="classPuck.html">Puck</a>&amp; ball) <span class="keyword">override</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">enum</span> packetStates {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        PLAYING,</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        SCORE,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    };</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classClient.html">Client</a> &amp;client;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> SendData(<a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; enemyPointer, <a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; pointer);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> RecvData(<a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; enemyPointer, <a class="code" href="classCameraPointer.html">CameraPointer</a>&amp; pointer, <a class="code" href="classPuck.html">Puck</a>&amp; ball);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LANCONTROLLERCLIENT_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="Server_8hpp_html"><div class="ttname"><a href="Server_8hpp.html">Server.hpp</a></div><div class="ttdoc">Definicja klasy Server dziedziczącej po Networking. </div></div>
+<div class="ttc" id="classPuck_html"><div class="ttname"><a href="classPuck.html">Puck</a></div><div class="ttdoc">Klasa reprezentuje krążek hokejowy. </div><div class="ttdef"><b>Definition:</b> Puck.hpp:21</div></div>
+<div class="ttc" id="classCameraPointer_html"><div class="ttname"><a href="classCameraPointer.html">CameraPointer</a></div><div class="ttdoc">Klasa wskaźnika sterowanego przez kamerkę </div><div class="ttdef"><b>Definition:</b> CameraPointer.hpp:60</div></div>
+<div class="ttc" id="classLanControllerClient_html"><div class="ttname"><a href="classLanControllerClient.html">LanControllerClient</a></div><div class="ttdoc">Klasa sieciowego kontrolera paletki przeciwnika po stronie klienta. </div><div class="ttdef"><b>Definition:</b> LanControllerClient.hpp:28</div></div>
+<div class="ttc" id="classPaddleController_html"><div class="ttname"><a href="classPaddleController.html">PaddleController</a></div><div class="ttdoc">Abstrakcyjna bazowa klasa kontrolera paletki. Jest używana w klasie Hockey. </div><div class="ttdef"><b>Definition:</b> PaddleController.hpp:22</div></div>
+<div class="ttc" id="classClient_html"><div class="ttname"><a href="classClient.html">Client</a></div><div class="ttdoc">Klasa klienta gry. </div><div class="ttdef"><b>Definition:</b> Client.hpp:21</div></div>
+<div class="ttc" id="PaddleController_8hpp_html"><div class="ttname"><a href="PaddleController_8hpp.html">PaddleController.hpp</a></div><div class="ttdoc">Definicja klasy PaddleController. </div></div>
+<div class="ttc" id="Client_8hpp_html"><div class="ttname"><a href="Client_8hpp.html">Client.hpp</a></div><div class="ttdoc">Definicja klasy Client dziedziczącej po Networking. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Dokumentacja projektu</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Dokumentacja projektu </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1>Spis treści</h1>
+<ul>
+<li><a href="#cel">Cel projektu</a></li>
+<li><a href="#user">Dla użytkownika</a><ul>
+<li><a href="#hardware">Wymagania sprzętowe</a></li>
+<li><a href="#wskaznik">Wymagania fizyczne (wskaźniki)</a></li>
+<li><a href="#instrukcja">Instrukcja użytkowania</a><ul>
+<li><a href="#uruchomienie">Uruchomienie aplikacji</a></li>
+<li><a href="#mainmenu">Menu główne aplikacji</a></li>
+<li><a href="#hockeymenu">Menu gry Air Hockey</a></li>
+<li><a href="#gra">Przebieg gry</a></li>
+<li><a href="#paint">Paint test</a></li>
+<li><a href="#menumulti">Menu gry wieloosobowej</a></li>
+<li><a href="#menucreate">Gra przez LAN</a></li>
+</ul>
+</li>
+<li><a href="#ustawienia">Ustawienia</a><ul>
+<li><a href="#kalibracja">Kalibracja kamerki i detektora</a></li>
+<li><a href="#configfile">Plik konfiguracyjny</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#programista">Dla programisty</a><ul>
+<li><a href="#narzedzia">Wykorzystane narzędzia</a></li>
+<li><a href="#zalozenia">Założenia programu</a><ul>
+<li><a href="#zrealizowane">Zrealizowane</a></li>
+<li><a href="#niezrealizowane">Nie zrealizowane</a></li>
+</ul>
+</li>
+<li><a href="#kompilacja">Kompilacja</a><ul>
+<li><a href="#wymagania">Wymagania</a></li>
+<li><a href="#linux">Linux</a><ul>
+<li><a href="#eclipse">Import projektu do Eclipse CDT</a></li>
+</ul>
+</li>
+<li><a href="#windows">Windows</a></li>
+</ul>
+</li>
+<li><a href="#dzialanie">Działanie programu</a><ul>
+<li><a href="#mainthread">Uproszczony diagram głównej pętli</a></li>
+<li><a href="#secondthread">Uproszczony diagram pętli wątku pomocniczego</a></li>
+<li><a href="#detekcja">Diagram algorytmu detekcji wskaźników</a></li>
+<li><a href="#kolizja">Detekcja kolizji krążka z paletką</a></li>
+<li><a href="#odbicie">Obliczanie kąta odbicia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="cel"></a> </p><h1>Cel projektu</h1>
+<p>Celem projektu było utworzenie adaptacji gry Air Hockey napisanej w języku <b>C<code>++</code></b> w środowisku <b>2d</b>, której główną cechą jest sterowanie przy użyciu kamerki internetowej. Miały być zrealizowane trzy tryby gry:</p><ul>
+<li>tryb jednoosobowy z przeciwnikiem sterowanym przez komputer</li>
+<li>tryb dla dwóch graczy przy jednym komputerze</li>
+<li>tryb gry w sieci lokalnej</li>
+</ul>
+<p>Sterowanie miało się odbywać przez detekcję jednokolorowych okrągłych wskaźników przy częstotliwości rejestracji klatek pozwalającej na komfortową obsługę. Warstwa graficzna oraz komunikacja sieciowa miała być zrealizowana przez bibliotekę <b>SFML</b>, która jest prosta ale spełniająca nasze wymagania. Komunikacja z kamerką internetową oraz narzędzia do przetwarzania obrazu w czasie rzeczywistym miała być zrealizowana dzięki potężnej bibliotece <b>OpenCV</b>. Pobocznym celem było napisanie prostego interfejsu graficznego dostosowanego do naszych potrzeb z uwagi na nie stosowanie dodatkowych bibliotek rozszerzających <b>SFML</b> np. <b>SFGUI</b>. Dodatkowym celem było napisanie aplikacji działającej na platformie <b>Windows</b> oraz <b>Linux</b> co ułatwiły wybrane przez nas biblioteki.</p>
+<p><a class="anchor" id="user"></a> </p><h1>Dla użytkownika</h1>
+<p><a class="anchor" id="hardware"></a> </p><h2>Wymagania sprzętowe</h2>
+<ul>
+<li>Karta graficzna z obsługą OpenGL &gt;= 2.0</li>
+<li>Kamerka internetowa z możliwością nastawy ekspozycji oraz FPS &gt;= 25</li>
+<li>Pamięć RAM &gt;= 1 GB</li>
+<li>Rozmiar aplikacji ok 10 MB</li>
+<li>Procesor minimum 2 rdzenie np. Intel® i3-530 2.93 GHz</li>
+</ul>
+<p><a class="anchor" id="wskaznik"></a> </p><h2>Wymagania fizyczne (wskaźniki)</h2>
+<p>Do prawidłowego działania aplikacji potrzebne są jednokolorowe wskaźniki. Kształt zarejestrowanego wskaźnika powinien być okrągły.</p>
+<p>Proponowane przez nas wskaźniki to piłeczki pingpongowe z wyciętą dziurą do zakładania na palec (wskazujący oraz kciuk).</p>
+<div class="image">
+<img src="../img/pong1.jpg" alt="Ping pong z dziurą"/>
+</div>
+<p>Dla lepszej wygody i dopasowania można wyścielić dziurę tkaniną, przymocować ją np klejem na gorąco.</p>
+<div class="image">
+<img src="../img/pong2.jpg" alt="2 Ping pongi z tkaniną"/>
+</div>
+<p>Należy pamiętać aby kolor wskaźników był unikatowy w obrębie sceny, co pomoże uniknąć niemożliwych do odfiltrowania szumów tła. Wskaźniki białe również są możliwe do zastosowania lecz wymagają większych starań odnośnie tła (odbicia światła słonecznego i sztuczne źródła światła mogą być źródłem niepożądanych zakłóceń).</p>
+<p>Alternatywnie jako wskaźnik można użyć swojego smartphone'a. Należy zaopatrzyć się w odpowiedni obrazek z dwoma jednokolorowymi kołami np. taki:</p>
+<div class="image">
+<img src="../img/pong3.png" alt="2 Ping pongi z tkaniną"/>
+</div>
+<p><a class="anchor" id="instrukcja"></a> </p><h2>Instrukcja obsługi</h2>
+<p><a class="anchor" id="uruchomienie"></a> </p><h3>Uruchomienie aplikacji</h3>
+<p>Wykonywalny plik aplikacji to airhockey.exe (Windows) lub airhockey (Linux). Po jego otworzeniu ukaże się napis:</p>
+<div class="image">
+<img src="../img/cameranotfound.png" alt="Nie znaleziono kamery"/>
+</div>
+<p>Jeżeli mamy podłączoną kamerkę to napis powinien zniknąć w ciągu kilku sekund. Jeżeli mimo podłączenia nadal występuje należy dowiedzieć się pod jakim identyfikatorem występuje i spróbować ustawić go w pliku program.conf.</p>
+<p><a class="anchor" id="mainmenu"></a> </p><h3>Menu główne aplikacji</h3>
+<div class="image">
+<img src="../img/menumain.png" alt="Główne menu"/>
+</div>
+<p>Główne menu pozwala przejść do:</p><ul>
+<li>Podmenu gry Air Hockey</li>
+<li>Paint testu</li>
+<li>Ustawień</li>
+</ul>
+<p><a class="anchor" id="hockeymenu"></a> </p><h3>Menu gry Air Hockey</h3>
+<div class="image">
+<img src="../img/menuhockey.png" alt="Menu hockey"/>
+</div>
+<p> W menu gry Air Hockey mamy do wyboru:</p><ul>
+<li>Grę jednoosobową z przeciwnikiem sterowanym przez komputer.</li>
+<li>Grę wieloosobową</li>
+<li>Powrót do menu głównego</li>
+</ul>
+<p><a class="anchor" id="gra"></a> </p><h3>Przebieg gry</h3>
+<div class="image">
+<img src="../img/game.png" alt="Widok gry"/>
+</div>
+<p> Na załączonym obrazku przedstawiony jest widok gry w trybie jednoosobowym.</p>
+<p>Gra polega na odbijaniu krążka celem zdobycia bramki przeciwnika. Krążek porusza się w środowisku niewielkiego tarcia. Paletka gracza może poruszać się tylko w obszarze własnej połowy. Każda runda rozpoczyna się od umiejscowienia krążka w centrum areny. Gra kończy się po zdobyciu 10 punktów jednak z wymaganą przewagą 2 punktów.</p>
+<div class="image">
+<img src="../img/win.png" alt="Koniec gry"/>
+</div>
+<p> Po zakończonej grze możemy powrócić do menu lub zagrać ponownie.</p>
+<p><a class="anchor" id="paint"></a> </p><h3>Paint test</h3>
+<div class="image">
+<img src="../img/paint.png" alt="Paint test"/>
+</div>
+<p> Paint test służy do testowania działania wskaźników. Zawiera przycisk czyszczenia płótna. Aby przejść do menu głównego należy wcisnąć przycisk Escape.</p>
+<p><a class="anchor" id="menumulti"></a> </p><h3>Menu gry wieloosobowej</h3>
+<div class="image">
+<img src="../img/menumulti.png" alt="Menu multiplayer"/>
+</div>
+<p> Z menu gry wieloosobowej możemy przejść do:</p><ul>
+<li>Gry "side by side" - czyli granie przy jednym komputerze dla 2 osób</li>
+<li>Utworzenie serwera LAN</li>
+<li>Połączenie z serwerem LAN</li>
+</ul>
+<p><a class="anchor" id="menucreate"></a> </p><h3>Gra przez LAN</h3>
+<div class="image">
+<img src="../img/createserver.png" alt="Menu create server"/>
+</div>
+<p> W menu tworzenia serwera możemy ustawić nazwę serwera. Następnie możemy przejść do lobby lub powrócić do wcześniejszego menu.</p>
+<div class="image">
+<img src="../img/lobby.png" alt="Server lobby"/>
+</div>
+<p> Obrazek przedstawia widok lobby po stronie serwera. Przycisk play pojawia się wtedy gdy klient wybierze nasz serwer. Po kliknięciu play rozpoczyna się rozgrywka wieloosobowa.</p>
+<div class="image">
+<img src="../img/connect.png" alt="Client server list"/>
+</div>
+<p> Widok listy serwerów po stronie klienta.</p>
+<p><a class="anchor" id="ustawienia"></a> </p><h2>Ustawienia</h2>
+<p><a class="anchor" id="kalibracja"></a> </p><h3>Kalibracja kamerki i detektora</h3>
+<div class="image">
+<img src="../img/gameoptions.png" alt="Ustawienia kamerki"/>
+</div>
+<p> Na przedstawionym obrazku widać pierwszą stronę ustawień. Kamerka pracowała w słabym oświetleniu. Źródłem światła była jedynie lampka nocna lecz dzięki odpowiedniej konfiguracji detekcja punktów wskaźnika działa prawidłowo.</p>
+<p>Parametry do konfiguracji to:</p><ul>
+<li><b>Ekspozycja</b> - im wyższa tym dłużej naświetlana jest klatka. Powoduje zwiększenie jasności lecz przy tanich kamerkach także spadek FPS poniżej akceptowalnych wartości.</li>
+<li><b>Gamma</b> - im wyższa tym ciemniejsze obszary są rozjaśniane, zbyt duża wartość powoduje utratę ogólnego kontrastu.</li>
+<li><b>Balans bieli</b> - pozwala skompensować nadmierne przesunięcie barw w stronę czerwonego lub niebieskiego</li>
+<li><b>Przesunięcie barwy</b> - pozwala dokonać dużego przesunięcia barw w przestrzeni HSV. Przydatne gdy wykrywany kolor jest w okolicach początku (czerwony) lub końca (fioletowy). Pozwoli to na lepsze dobranie składowej H niskiej oraz wysokiej</li>
+<li><b>Składowa detektora H niska</b> - oznacza dolną granicę wykrywanej barwy w przestrzeni HSV</li>
+<li><b>Składowa detektora H wysoka</b> - oznacza górną granicę wykrywanej barwy w przestrzeni HSV</li>
+<li><b>Składowa detektora S niska</b> - oznacza dolną granicę wykrywanego nasycenia w przestrzeni HSV</li>
+<li><b>Składowa detektora S wysoka</b> - oznacza górną granicę wykrywanego nasycenia w przestrzeni HSV</li>
+<li><b>Składowa detektora V niska</b> - oznacza dolną granicę wykrywanej jasności w przestrzeni HSV</li>
+<li><b>Składowa detektora V wysoka</b> - oznacza górną granicę wykrywanej jasności w przestrzeni HSV</li>
+<li><b>Próg ruchu</b> - służy do konfiguracji maski ruchu. Im wyższa wartość tym różnica klatek aktualnej i poprzedniej musi być większa aby maska zadziałała w tych punktach.</li>
+<li><b>Próg maski okręgu 1 oraz 2</b> - służy do konfiguracji maski detektora okręgów. Niska wartość powoduje wykrycie większej ilości okręgów. Może powodować spowolnienie procesu przetwarzania.</li>
+<li><b>Minimalny rozmiar</b> - oznacza minimalny rozmiar wykrywanego punktu. Przydatne do odfiltrowania punktowych szumów mniejszych od właściwego znacznika a które nie mogą zostać wyeliminowane w inny sposób.</li>
+<li><b>Limit punktów</b> - ogranicza nadmierną ilość wykrytych punktów. Do prawidłowego działania wystarczą 4.</li>
+</ul>
+<div class="image">
+<img src="../img/optionssecond.png" alt="Ustawienia dodatkowe"/>
+</div>
+<p> Druga strona ustawień zawiera następujące opcje:</p><ul>
+<li>Przycisk przełączający wyświetlanie obrazu z kamery w tle</li>
+<li>Przycisk przełączający kolisty obszar kliknięcia wskaźnika</li>
+<li>Przycisk przełączający widok wskaźników w grze</li>
+<li>Przycisk do testowania algorytmu paletki</li>
+</ul>
+<p><a class="anchor" id="configfile"></a> </p><h3>Plik konfiguracyjny</h3>
+<p>Przykładowa zawartość pliku konfiguracyjnego</p>
+<blockquote class="doxtable">
+<p><b>deviceId 0</b> #Id urządzenia przechwytującego, ręczna konfiguracja może być przydatna gdy jest podłączonych kilka urządzeń przechwytujących obraz.</p>
+<p><b>maxId 5</b> #Maksymalny id dla pętli auto-wykrywania. Zmiana może być przydatna przy nietypowo wysokim identyfikatorze urządzenia przechwytującego</p>
+<p><b>exposure 299</b></p>
+<p><b>gamma 180</b></p>
+<p><b>whiteBalance 5001</b></p>
+<p><b>hueShift 90</b></p>
+<p><b>hueLow 80</b></p>
+<p><b>hueHigh 110</b></p>
+<p><b>saturationLow 55</b></p>
+<p><b>saturationHigh 255</b></p>
+<p><b>valueLow 65</b></p>
+<p><b>valueHigh 255</b></p>
+<p><b>moveThreshold 15</b></p>
+<p><b>circleMaskThreshold1 177</b></p>
+<p><b>circleMaskThreshold2 88</b></p>
+<p><b>pointsLimit 4</b></p>
+<p><b>minimumSize 18.548212</b></p>
+<p><b>serverName Uw<code>==</code></b> #Nazwa serwera zakodowana w base64</p>
+<p><b>winSizeX 1039</b> #Szerokość okna</p>
+<p><b>winSizeY 644</b> #Wysokość okna</p>
+<p><b>winPosX 0</b> #Pozycja X okna</p>
+<p><b>winPosY 0</b> #Pozycja Y okna</p>
+<p><b>leftNick QQ<code>==</code></b> #Lewy nick zakodowany w base64</p>
+<p><b>rightNick Qg<code>==</code></b> #Prawy nick zakodowany w base64</p>
+<p><b>pointerClickCircle 1</b> #Wyświetlanie promienia kliknięcia</p>
+<p><b>pointerInGame 1</b> #Wyświetlanie wskaźników w grze</p>
+<p><b>videoBackground 1</b> #Wyświetlanie obrazu z kamerki w grze </p>
+</blockquote>
+<p><a class="anchor" id="programista"></a> </p><h1>Dla programisty</h1>
+<p><a class="anchor" id="narzedzia"></a> </p><h2>Wykorzystane narzędzia</h2>
+<ul>
+<li>Biblioteki<ul>
+<li>SFML</li>
+<li>OpenCV</li>
+</ul>
+</li>
+<li>Programowanie<ul>
+<li>Eclipse CDT</li>
+<li>Microsoft Visual Studio</li>
+<li>make</li>
+<li>git</li>
+</ul>
+</li>
+<li>Tworzenie dokumentacji<ul>
+<li>doxygen</li>
+<li>medit</li>
+<li>Libre Office Writer</li>
+</ul>
+</li>
+<li>Tworzenie prezentacji<ul>
+<li>Inkscape</li>
+<li>Microsoft PowerPoint</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="zalozenia"></a> </p><h2>Założenia programu</h2>
+<p><a class="anchor" id="zrealizowane"></a> </p><h3>Zrealizowane</h3>
+<ul>
+<li>Działanie na platformie Windows oraz Linux dzięki SFML i OpenCV</li>
+<li>Implementacja algorytmu wykrywania wskaźników z wykorzystaniem biblioteki OpenCV</li>
+<li>Paint test</li>
+<li>Gra Air Hockey<ul>
+<li>Tryb gry jednoosobowej z komputerowym przeciwnikiem</li>
+<li>Tryb gry wieloosobowej w trybie "side by side" (na jednym komputerze)</li>
+<li>Podstawowy tryb gry w sieci lokalnej</li>
+<li>Podstawowa fizyka odbicia krążka uwzględniająca kąt paletki i wartość bezwzględną prędkości liniowej</li>
+<li>Automatycznie skalowana arena do rozmiaru okna</li>
+</ul>
+</li>
+<li>Interfejs graficzny<ul>
+<li>Automatycznie dopasowujące i skalowane menu do okna aplikacji</li>
+<li>Przycisk z możliwością przypisania akcji jako obiekt std::function&lt;void(const MenuButton&amp;)&gt;</li>
+<li>Menu zbudowane w oparciu o kontener przycisków</li>
+<li>Jednoliniowe wejściowe pole tekstowe</li>
+<li>Suwak do nastawy wartości liczbowych, z możliwością ustawienia wskaźnika na docelową zmienną</li>
+</ul>
+</li>
+<li>Ustawienia<ul>
+<li>Zapamiętywanie konfiguracji w pliku tekstowym z łatwą możliwością rozbudowy o kolejne parametry</li>
+<li>Możliwość prostego ustawienia parametrów kamerki</li>
+<li>Możliwość prostego ustawienia parametrów detektora punktów</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="niezrealizowane"></a> </p><h3>Nie zrealizowane</h3>
+<ul>
+<li>Gra Air Hockey<ul>
+<li>Zaawansowana fizyka odbicia krążka uwzględniająca precyzyjnie wektor prędkości liniowej oraz prędkość kątową</li>
+<li>Możliwość zmiany strony gry w trybie jednoosobowym oraz wieloosobowym sieciowym</li>
+<li>Możliwość zmiany ilości potrzebnych punktów do zdobycia</li>
+<li>Możliwość przełączania gry z przewagą 2 punktów</li>
+<li>Zaawansowane lobby z funkcją czatu i ustawień rozgrywki</li>
+</ul>
+</li>
+<li>Interfejs graficzny<ul>
+<li>Łatwiejszy mechanizm przełączania widoków menu</li>
+<li>Menu oparte o kontener abstrakcyjnego typu kontrolki</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="kompilacja"></a> </p><h2>Kompilacja</h2>
+<p><a class="anchor" id="wymagania"></a> </p><h3>Wymagania</h3>
+<p>Aby skompilować projekt należy posiadać następujące biblioteki:</p><ul>
+<li><b><a href="https://www.sfml-dev.org/download.php">SFML</a></b> &gt;= 2.3.3</li>
+<li><b><a href="http://opencv.org/releases.html">OpenCV</a></b> &gt;= 3.2</li>
+<li><b><a href="http://www.haksior.com/wprowadzenie-do-programowania-video4linux-v4l-oraz-v4l2-215.html">Video4Linux</a></b> (tylko dla dystrybucji Linux)</li>
+</ul>
+<p>Opcjonalnie można zainstalować <b>doxygen</b> do generacji dokumentacji html.</p>
+<p><a class="anchor" id="linux"></a> </p><h3>Linux</h3>
+<p>Zalecana jest kompilacja z użyciem narzędzia <b>make</b>, które należy zainstalować jeżeli nie jest dostępne.</p>
+<p>Dodatkowo wymagany jest kompilator <b>C<code>++</code></b> obsługujący standard <b>C<code>++</code>11</b>. Zaleca się użycie <b>g<code>++</code>6</b>.</p>
+<p>Instalacja pakietów dla dystrybucji wywodzących się z Debiana:</p>
+<blockquote class="doxtable">
+<p><b>sudo apt-get install</b> <em>build-essential</em> <em>libsfml-dev</em> <em>libv4l-dev</em> <em>libopencv-dev</em> </p>
+</blockquote>
+<p>Jeżeli wersja biblioteki OpenCV w repozytorium jest nieodpowiednia należy przeprowadzić kompilacje biblioteki ze źródeł <a href="https://github.com/opencv/opencv">OpenCV GIT</a>.</p>
+<p><em>Po udanej kompilacji należy pamiętać o uruchomieniu komendy ldconfig jako root.</em></p>
+<p>Następnie należy przejść do katalogu z kodem źródłowym: </p><blockquote class="doxtable">
+<p><b>cd</b> NAZWA_KATALOGU_ŹRÓDŁOWEGO</p>
+<p><b>make</b> PH=off ARG=-O3 </p>
+</blockquote>
+<p><em>Użycie <b>PH=off</b> powoduje że nie zostaną utworzone prekompilowane nagłówki natomiast <b>ARG=-O3</b> przekazuje dodatkową flagę optymalizacji 3 stopnia do kompilatora.</em></p>
+<p>Po udanej kompilacji powinien zostać wygenerowany plik binarny <b>airhockey</b></p>
+<p>Można go uruchomić z terminala, znajdując się w tym samym katalogu: </p><blockquote class="doxtable">
+<p><b>./airhockey</b> </p>
+</blockquote>
+<p>Dodatkowe możliwości pliku makefile:</p>
+<p>Usuwanie plików *.o </p><blockquote class="doxtable">
+<p><b>make</b> clean </p>
+</blockquote>
+<p>Usuwanie plików *.o oraz prekompilowane nagłówki *.gch i pomocnicze *.md5* </p><blockquote class="doxtable">
+<p><b>make</b> cleanall </p>
+</blockquote>
+<p><a class="anchor" id="eclipse"></a> </p><h4>Import projektu do Eclipse CDT</h4>
+<p>Wybieramy: </p><blockquote class="doxtable">
+<p>File &gt; Import... &gt; C/C++ &gt; Existing code as Makefile Project </p>
+</blockquote>
+<p>Wybieramy lokacje kodu źródłowego oraz zaznaczamy język <b>C<code>++</code></b> oraz Toolchain for Indexer Settings na <b>Linux GCC</b></p>
+<p>Po imporcie ustawiamy plik wykonywalny </p><blockquote class="doxtable">
+<p>Run &gt; Run Configurations... &gt; C/C++ Application &gt; (PPM) New </p>
+</blockquote>
+<p>Następnie wpisujemy nazwę pliku: </p><blockquote class="doxtable">
+<p>airhockey </p>
+</blockquote>
+<p>Możemy także usprawnić naszą kompilacje przez użycie wielu rdzeni: </p><blockquote class="doxtable">
+<p>Projekt &gt; Properties &gt; C/C++ Build </p>
+</blockquote>
+<p>Odznaczamy <em>Use default build command</em> i dla 4 rdzeni wpisujemy w build commmand: </p><blockquote class="doxtable">
+<p><b>make</b> -j4 </p>
+</blockquote>
+<p><a class="anchor" id="windows"></a> </p><h3>Windows</h3>
+<p>Kompilacja dla systemów Windows może być przeprowadzona w <em>Visual Studio</em>.</p>
+<p>Na początku należy utworzyć nowy pusty projekt <b>C<code>++</code></b> a następnie przejść do ustawień:</p>
+<blockquote class="doxtable">
+<p>Project &gt; NAZWA_PROJEKTU properties </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>C/C++ &gt; General </p>
+</blockquote>
+<div class="image">
+<img src="../img/visualgeneral.png" alt="Okno ustawień projektu"/>
+</div>
+<p>W Additional Include Directories dodajemy katalog include z SFML.</p>
+<p>Następnie przechodzimy do ustawień:</p>
+<blockquote class="doxtable">
+<p>Linker &gt; Input </p>
+</blockquote>
+<div class="image">
+<img src="../img/visuallinker.png" alt="Okno ustawień linkera"/>
+</div>
+<p>W Additional Dependencies należy ustawić następujące pliki:</p>
+<blockquote class="doxtable">
+<p>sfml-graphics-d.lib</p>
+<p>sfml-main-d.lib</p>
+<p>sfml-system-d.lib</p>
+<p>sfml-window-d.lib</p>
+<p>sfml-network-d.lib </p>
+</blockquote>
+<p><b>Dla kompilacji release należy wybrać analogiczne pliki bez końcówki -d</b></p>
+<div class="image">
+<img src="../img/visualadditionaldependencies.png" alt="Okno ustawień plików biblioteki"/>
+</div>
+<p>Dalej przechodzimy do ustawień:</p>
+<blockquote class="doxtable">
+<p>Linker &gt; General </p>
+</blockquote>
+<p>W Additional Library Directories dodajemy katalog lib z SFML.</p>
+<div class="image">
+<img src="../img/visuallinkergeneral.png" alt="Okno ustawień katalogu biblioteki"/>
+</div>
+<p>Bibliotekę OpenCV można zainstalować przez NuGet: </p><blockquote class="doxtable">
+<p>Tools &gt; NuGet Package Manager &gt; Package Manager Console </p>
+</blockquote>
+<p>Wpisujemy komendę: </p><blockquote class="doxtable">
+<p><b>Install-Package</b> OpenCV -Version 2.4.11 </p>
+</blockquote>
+<div class="image">
+<img src="../img/visualnuget.png" alt="Konsola nuget"/>
+</div>
+<p>Ostatnią czynnością jest dodanie wszystkich plików źródłowych *.hpp i *.cpp.</p>
+<p><a class="anchor" id="dzialanie"></a> </p><h2>Działanie programu</h2>
+<p>Aplikacja działa w oparciu o pętlę programu wykonywaną w wątku głównym a także pętlę wykonywaną w wątku pomocniczym.</p>
+<p>Decyzja o zastosowaniu dodatkowego wątku została podjęta z uwagi na fakt, że odczyt ramki z kamerki internetowej odbywa się w stosunkowo długim czasie co mogłoby spowodować utratę płynności działania aplikacji.</p>
+<p><a class="anchor" id="mainthread"></a> </p><h3>Uproszczony diagram głównej pętli</h3>
+<div class="image">
+<img src="../img/mainthread.png" alt="Diagram pętli głównej"/>
+</div>
+<p>Główny wątek odpowiada za odczytywanie zdarzeń z okna i reakcją na nie. Dokonywane jest nawiązanie połączenia z kamerką internetową i nastawa jej parametrów. Dodatkowo w nim są aktualizowane wszystkie obiekty potrzebne w aktualnym widoku. Jest tam między innymi obsługa elementów interfejsu graficznego jak i obsługa komunikacji sieciowej. Ostatnią czynnością jest wyrysowanie wszystkich obiektów na scenie i wyświetlenie wygenerowanej klatki.</p>
+<p><a class="anchor" id="secondthread"></a> </p><h3>Uproszczony diagram pętli wątku pomocniczego</h3>
+<div class="image">
+<img src="../img/secondthread.png" alt="Diagram pętli pomocniczej"/>
+</div>
+<p>Pomocniczy wątek odpowiada za odczytanie klatki z urządzenia przechwytującego a następnie przeprowadzenie detekcji punktów wskaźnika lub dwóch wskaźników w zależności od stanu aplikacji.</p>
+<p><a class="anchor" id="detekcja"></a> </p><h3>Diagram algorytmu detekcji wskaźników</h3>
+<div class="image">
+<img src="../img/algo1.png" alt="Algorytm część 1"/>
+</div>
+<div class="image">
+<img src="../img/algo2.png" alt="Algorytm część 2"/>
+</div>
+<p>Na powyższych rysunkach przedstawiono w uproszczony sposób algorytmu detekcji wskaźników. Metody OpenCV warte uwagi:</p><ul>
+<li><a href="http://docs.opencv.org/3.2.0/d2/de8/group__core__array.html#ga6fef31bc8c4071cbc114a758a2b79c14">cv::absdiff</a> - do wyznaczania absolutnej różnicy pomiędzy dwoma ramkami</li>
+<li><a href="http://docs.opencv.org/3.1.0/de/d25/imgproc_color_conversions.html">cv::cvtColor</a> - do konwersji przestrzeni barw</li>
+<li><a href="http://docs.opencv.org/trunk/d7/d4d/tutorial_py_thresholding.html">cv::threshold</a> - do progowania ramki</li>
+<li><a href="http://docs.opencv.org/3.2.0/db/df6/tutorial_erosion_dilatation.html">cv::erode</a> - do operacji erozji</li>
+<li><a href="http://docs.opencv.org/3.2.0/db/df6/tutorial_erosion_dilatation.html">cv::dilate</a> - do operacji rozszerzania</li>
+<li><a href="http://docs.opencv.org/3.2.0/d2/de8/group__core__array.html#gab85523db362a4e26ff0c703793a719b4">cv::bitwise_or</a> - do bitowej sumy dwóch ramek</li>
+<li><a href="http://docs.opencv.org/3.2.0/d2/de8/group__core__array.html#ga60b4d04b251ba5eb1392c34425497e14">cv::bitwise_and</a> - do bitowego iloczynu dwóch ramek</li>
+<li><a href="http://docs.opencv.org/trunk/da/d97/tutorial_threshold_inRange.html">cv::inRange</a> - do selekcji kolorów</li>
+<li><a href="http://docs.opencv.org/3.1.0/d4/d70/tutorial_hough_circle.html">cv::HoughCircles</a> - do wykrywania okręgów</li>
+<li><a href="https://www.learnopencv.com/blob-detection-using-opencv-python-c/">cv::SimpleBlobDetector</a> - do do wykrywania jednobarwnych plam</li>
+</ul>
+<p><a class="anchor" id="kolizja"></a> </p><h3>Detekcja kolizji krążka z paletką</h3>
+<p>Detekcja kolizji krążka z obróconą paletką może być nieco problematyczna. Istnieje natomiast prosty sposób jak to osiągnąć. Zamiast obracać prostokąt (paletkę) należy obrócić krążek pod tym samym kątem pod którym obrócilibyśmy paletkę. Możemy to osiągnąć za pomocą następujących wzorów:</p>
+<blockquote class="doxtable">
+<p><em>x’</em> = <b>cos</b>(<em>theta</em>) * (<em>cx</em> – <em>originX</em>) – <b>sin</b>(<em>theta</em>) * (<em>cy</em> – <em>originY</em>) + <em>originX</em></p>
+<p><em>y’</em> = <b>sin</b>(<em>theta</em>) * (<em>cx</em> – <em>originX</em>) + <b>cos</b>(<em>theta</em>) * (<em>cy</em> – <em>originY</em>) + <em>originY</em> </p>
+</blockquote>
+<p>Na poniższym rysunku został przedstawiony ten proces. Niebieskie elementy to te które gracz widzi na ekranie, natomiast obliczenia są przeprowadzane dla elementów o kolorze czarnym.</p>
+<div class="image">
+<img src="../img/c2.png" alt="Obrazowanie 1"/>
+</div>
+<p>Następnie za pomocą prostych instrukcji warunkowych należy znaleźć punkt na paletce, który jest najbliżej środka krążka. Ostatnim krokiem jest sprawdzenie odległości między tym punktem, a środkiem krążka za pomocą twierdzenia Pitagorasa. Jeżeli odległość ta jest mniejsza od promienia krążka, to oznacza, że nastąpiła kolizja.</p>
+<div class="image">
+<img src="../img/c5.png" alt="Obrazowanie 2"/>
+</div>
+<p><a class="anchor" id="odbicie"></a> </p><h3>Obliczanie kąta odbicia</h3>
+<p>Do obliczenia nowego kąta piłki po odbiciu zastosowaliśmy obliczenia wektorowe. Kąt pod którym leci piłka rozbijamy na postać wektorową, na składową x oraz y.</p>
+<blockquote class="doxtable">
+<p><em>x</em> = <b>cos</b>(<em>angle</em>);</p>
+<p><em>y</em> = <b>cos</b>(<em>angle</em>); </p>
+</blockquote>
+<p>Następnie tworzymy 2 nowe wektory. Wektor u, który jest prostopadły do obiektu, z którym nastąpiła kolizja oraz wektor w równoległy do tej ściany. Te wektory uzyskujemy za pomocą wzorów:</p>
+<blockquote class="doxtable">
+<p><em>u</em> = (<em>v</em> · <em>n</em> / <em>n</em> · <em>n</em>) * <em>n</em></p>
+<p><em>w</em> = <em>v</em> − <em>u</em> </p>
+</blockquote>
+<div class="image">
+<img src="../img/vn.png" alt="vn"/>
+</div>
+<p>Gdzie n oznacza wektor siły prostopadłej do ściany. Posiadając już te 2 wektory możemy uzyskać wektor piłki po odbiciu (v' = w - u) oraz przekształcić go do postaci kątowej.</p>
+<div class="image">
+<img src="../img/vuw.png" alt="vuw"/>
+</div>
+ </div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

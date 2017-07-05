@@ -1,0 +1,14 @@
+<map id="ConfigurationManager.hpp" name="ConfigurationManager.hpp">
+<area shape="rect" id="node12" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="1495,80,1551,107"/>
+<area shape="rect" id="node13" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="711,80,786,107"/>
+<area shape="rect" id="node16" href="$TextInput_8hpp.html" title="Definicja klasy TextInput dziedziczącej po sf::Drawable i Pressable. " alt="" coords="508,80,611,107"/>
+<area shape="rect" id="node14" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="918,155,1041,181"/>
+<area shape="rect" id="node15" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="775,155,893,181"/>
+<area shape="rect" id="node18" href="$Pressable_8hpp.html" title="Definicja bazowej klasy Pressable dziedziczącej po HaveAction, HaveHover, HavePressed, HaveVisible i HaveFocus. " alt="" coords="480,155,585,181"/>
+<area shape="rect" id="node19" href="$HaveHover_8hpp.html" title="Definicja bazowej klasy HaveHover dziedziczącej po Object2d. " alt="" coords="752,229,863,256"/>
+<area shape="rect" id="node23" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="325,229,450,256"/>
+<area shape="rect" id="node24" href="$HaveVisible_8hpp.html" title="Definicja bazowej klasy HaveVisible. " alt="" coords="475,229,591,256"/>
+<area shape="rect" id="node25" href="$HaveFocus_8hpp.html" title="Definicja bazowej klasy HaveFocus. " alt="" coords="615,229,728,256"/>
+<area shape="rect" id="node26" href="$HaveAction_8hpp.html" title="Definicja bazowej generycznej klasy HaveAction. " alt="" coords="186,229,301,256"/>
+<area shape="rect" id="node20" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="758,304,857,331"/>
+</map>

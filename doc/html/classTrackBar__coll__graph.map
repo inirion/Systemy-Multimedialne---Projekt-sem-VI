@@ -1,0 +1,12 @@
+<map id="TrackBar&lt; T &gt;" name="TrackBar&lt; T &gt;">
+<area shape="rect" id="node2" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="172,247,277,273"/>
+<area shape="rect" id="node4" href="$classHaveName.html" title="Bazowa klasa obiektu nazywalnego. " alt="" coords="181,171,268,197"/>
+<area shape="rect" id="node5" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="293,171,421,197"/>
+<area shape="rect" id="node6" href="$classHaveAction.html" title="HaveAction\&lt; void \&gt;" alt="" coords="31,95,168,121"/>
+<area shape="rect" id="node7" href="$structHaveActionHelper_3_01void_01_4.html" title="Struktura pomocnicza dla argumentu typu == void. " alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node8" href="$classHaveHover.html" title="Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. " alt="" coords="196,95,283,121"/>
+<area shape="rect" id="node9" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="205,5,279,32"/>
+<area shape="rect" id="node10" href="$classHavePressed.html" title="Bazowa klasa obiektu posiadający stan wciśnięcia. " alt="" coords="307,95,407,121"/>
+<area shape="rect" id="node11" href="$classHaveVisible.html" title="Bazowa klasa obiektu posiadający stan widoczności. " alt="" coords="431,95,522,121"/>
+<area shape="rect" id="node12" href="$classHaveFocus.html" title="Bazowa klasa obiektu &quot;focusowalnego&quot;. " alt="" coords="546,95,634,121"/>
+</map>

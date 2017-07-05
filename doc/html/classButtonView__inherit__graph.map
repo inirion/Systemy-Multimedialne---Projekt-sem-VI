@@ -1,0 +1,14 @@
+<map id="ButtonView" name="ButtonView">
+<area shape="rect" id="node3" href="$classMenuDefaultsAsk.html" title="Klasa reprezentująca widok menu z pytaniem o przywrócenie domyślnych ustawień. " alt="" coords="303,5,429,32"/>
+<area shape="rect" id="node4" href="$classMenuHockey.html" title="Klasa reprezentująca widok menu wyboru trybu singleplayer i multiplayer. " alt="" coords="317,56,415,83"/>
+<area shape="rect" id="node5" href="$classMenuHockeyConnectServer.html" title="Klasa reprezentująca widok menu wyboru serwera. " alt="" coords="274,107,458,133"/>
+<area shape="rect" id="node6" href="$classMenuHockeyCreateServer.html" title="Klasa reprezentująca widok menu tworzenia serwera. " alt="" coords="279,157,453,184"/>
+<area shape="rect" id="node7" href="$classMenuHockeyCreateSideBySide.html" title="Klasa reprezentująca widok menu tworzenia gry side by side. " alt="" coords="264,208,468,235"/>
+<area shape="rect" id="node8" href="$classMenuHockeyLobby.html" title="Klasa reprezentująca widok lobby serwera oczekującego na gracza. " alt="" coords="299,259,433,285"/>
+<area shape="rect" id="node9" href="$classMenuHockeyMulti.html" title="Klasa reprezentująca widok menu wyboru trybu side by side, tworzenia serwera i łączenia z serwerem..." alt="" coords="303,309,429,336"/>
+<area shape="rect" id="node10" href="$classMenuHockeyWin.html" title="Klasa reprezentująca widok menu wygranej gry z możliwością ponownej rozgrywki. " alt="" coords="306,360,426,387"/>
+<area shape="rect" id="node11" href="$classMenuMain.html" title="Klasa reprezentująca widok menu głównego widocznego po uruchomieniu programu. " alt="" coords="325,411,407,437"/>
+<area shape="rect" id="node12" href="$classMenuOptionsFirst.html" title="Klasa reprezentująca menu pierwszej strony opcji. " alt="" coords="303,461,429,488"/>
+<area shape="rect" id="node13" href="$classMenuOptionsSecond.html" title="Klasa reprezentująca menu drugiej strony opcji. " alt="" coords="295,512,437,539"/>
+<area shape="rect" id="node14" href="$classMenuPaint.html" title="Klasa reprezentująca menu paint testu z przyciskiem do czyszczenia płótna. " alt="" coords="324,563,408,589"/>
+</map>

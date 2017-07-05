@@ -1,0 +1,11 @@
+<map id="Networking.hpp" name="Networking.hpp">
+<area shape="rect" id="node2" href="$Broadcaster_8hpp.html" title="Definicja klasy Broadcaster dziedziczącej po Networking. " alt="" coords="220,80,337,107"/>
+<area shape="rect" id="node6" href="$Client_8hpp.html" title="Definicja klasy Client dziedziczącej po Networking. " alt="" coords="462,80,542,107"/>
+<area shape="rect" id="node10" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="566,80,652,107"/>
+<area shape="rect" id="node3" href="$MenuHockeyConnectServer_8hpp.html" title="Definicja klasy MenuHockeyConnectServer dziedziczącej po ButtonView. " alt="" coords="31,155,240,181"/>
+<area shape="rect" id="node4" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="454,229,550,256"/>
+<area shape="rect" id="node5" href="$MenuHockeyLobby_8hpp.html" title="Definicja klasy MenuHockeyLobby dziedziczącej po ButtonView. " alt="" coords="264,155,423,181"/>
+<area shape="rect" id="node7" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="498,155,589,181"/>
+<area shape="rect" id="node8" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="614,155,770,181"/>
+<area shape="rect" id="node9" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="794,155,955,181"/>
+</map>

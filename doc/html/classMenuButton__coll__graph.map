@@ -1,0 +1,12 @@
+<map id="MenuButton" name="MenuButton">
+<area shape="rect" id="node3" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="313,185,532,212"/>
+<area shape="rect" id="node4" href="$classHaveAction.html" title="HaveAction\&lt; const MenuButton &amp; \&gt;" alt="" coords="5,109,237,136"/>
+<area shape="rect" id="node5" href="$structHaveActionHelper.html" title="HaveActionHelper\&lt; const\l MenuButton &amp;\&gt;" alt="" coords="36,5,207,47"/>
+<area shape="rect" id="node6" href="$classHaveHover.html" title="Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. " alt="" coords="262,109,349,136"/>
+<area shape="rect" id="node7" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="268,13,343,39"/>
+<area shape="rect" id="node8" href="$classHavePressed.html" title="Bazowa klasa obiektu posiadający stan wciśnięcia. " alt="" coords="373,109,473,136"/>
+<area shape="rect" id="node9" href="$classHaveVisible.html" title="Bazowa klasa obiektu posiadający stan widoczności. " alt="" coords="497,109,588,136"/>
+<area shape="rect" id="node10" href="$classHaveFocus.html" title="Bazowa klasa obiektu &quot;focusowalnego&quot;. " alt="" coords="612,109,700,136"/>
+<area shape="rect" id="node11" href="$classHaveName.html" title="Bazowa klasa obiektu nazywalnego. " alt="" coords="557,185,643,212"/>
+<area shape="rect" id="node12" href="$classHaveEnabled.html" title="Bazowa klasa obiektu włączalnego. " alt="" coords="668,185,767,212"/>
+</map>

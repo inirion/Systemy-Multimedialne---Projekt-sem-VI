@@ -1,0 +1,8 @@
+<map id="Puck.hpp" name="Puck.hpp">
+<area shape="rect" id="node2" href="$PaddleController_8hpp.html" title="Definicja klasy PaddleController. " alt="" coords="106,80,249,107"/>
+<area shape="rect" id="node5" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="5,155,96,181"/>
+<area shape="rect" id="node3" href="$AIController_8hpp.html" title="Definicja klasy AIController dziedziczącej po PaddleController. " alt="" coords="120,155,235,181"/>
+<area shape="rect" id="node6" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="259,155,415,181"/>
+<area shape="rect" id="node7" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="439,155,601,181"/>
+<area shape="rect" id="node4" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="209,229,305,256"/>
+</map>

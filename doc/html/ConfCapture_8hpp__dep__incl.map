@@ -1,0 +1,32 @@
+<map id="ConfCapture.hpp" name="ConfCapture.hpp">
+<area shape="rect" id="node2" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="2111,80,2185,107"/>
+<area shape="rect" id="node3" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="1808,155,1941,181"/>
+<area shape="rect" id="node6" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="1621,528,1717,555"/>
+<area shape="rect" id="node7" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="1972,453,2063,480"/>
+<area shape="rect" id="node10" href="$Paddle_8hpp.html" title="Definicja klasy Paddle dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="1898,229,1985,256"/>
+<area shape="rect" id="node11" href="$Puck_8hpp.html" title="Definicja klasy Puck dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="1979,304,2056,331"/>
+<area shape="rect" id="node26" href="$Broadcaster_8hpp.html" title="Definicja klasy Broadcaster dziedziczącej po Networking. " alt="" coords="2793,379,2911,405"/>
+<area shape="rect" id="node27" href="$MenuButton_8hpp.html" title="Definicja klasy MenuButton dziedziczącej po sf::Drawable, Pressable, HaveName i HaveEnabled. " alt="" coords="43,229,160,256"/>
+<area shape="rect" id="node28" href="$ConfigurationManager_8hpp.html" title="Definicja klasy ConfigurationManager oraz struktury ConfigurationObjects. " alt="" coords="2875,304,3048,331"/>
+<area shape="rect" id="node29" href="$Gate_8hpp.html" title="Definicja klasy Gate dziedziczącej po public sf::Drawable i Object2d. " alt="" coords="2111,229,2185,256"/>
+<area shape="rect" id="node30" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="2447,379,2532,405"/>
+<area shape="rect" id="node31" href="$TrackBar_8hpp.html" title="Definicja klasy TrackBarBase dziedziczącej po sf::Drawable, HaveFocus i Pressable oraz definicja klas..." alt="" coords="3107,155,3207,181"/>
+<area shape="rect" id="node4" href="$PaddleController_8hpp.html" title="Definicja klasy PaddleController. " alt="" coords="2182,379,2325,405"/>
+<area shape="rect" id="node12" href="$UniCameraPointer_8hpp.html" title="Definicja klasy UniPointer. " alt="" coords="957,304,1109,331"/>
+<area shape="rect" id="node5" href="$AIController_8hpp.html" title="Definicja klasy AIController dziedziczącej po PaddleController. " alt="" coords="2087,453,2201,480"/>
+<area shape="rect" id="node8" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="2411,453,2567,480"/>
+<area shape="rect" id="node9" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="2226,453,2387,480"/>
+<area shape="rect" id="node13" href="$ButtonView_8hpp.html" title="Definicja klasy ButtonView dziedziczącej po sf::Drawable. " alt="" coords="1090,379,1203,405"/>
+<area shape="rect" id="node14" href="$MenuMain_8hpp.html" title="Definicja klasy MenuMain dziedziczącej po ButtonView. " alt="" coords="1017,453,1124,480"/>
+<area shape="rect" id="node15" href="$MenuOptionsFirst_8hpp.html" title="Definicja klasy MenuOptionsFirst dziedziczącej po ButtonView. " alt="" coords="1149,453,1299,480"/>
+<area shape="rect" id="node16" href="$MenuOptionsSecond_8hpp.html" title="Definicja klasy MenuOptionsSecond dziedziczącej po ButtonView. " alt="" coords="1324,453,1492,480"/>
+<area shape="rect" id="node17" href="$MenuDefaultsAsk_8hpp.html" title="Definicja klasy MenuDefaultsAsk dziedziczącej po ButtonView. " alt="" coords="1517,453,1667,480"/>
+<area shape="rect" id="node18" href="$MenuPaint_8hpp.html" title="Definicja klasy MenuPaint dziedziczącej po ButtonView. " alt="" coords="1692,453,1801,480"/>
+<area shape="rect" id="node19" href="$MenuHockey_8hpp.html" title="Definicja klasy MenuHockey dziedziczącej po ButtonView. " alt="" coords="1825,453,1948,480"/>
+<area shape="rect" id="node20" href="$MenuHockeyMulti_8hpp.html" title="Definicja klasy MenuHockeyMulti dziedziczącej po ButtonView. " alt="" coords="145,453,295,480"/>
+<area shape="rect" id="node21" href="$MenuHockeyConnectServer_8hpp.html" title="Definicja klasy MenuHockeyConnectServer dziedziczącej po ButtonView. " alt="" coords="2643,453,2853,480"/>
+<area shape="rect" id="node22" href="$MenuHockeyCreateServer_8hpp.html" title="Definicja klasy MenuHockeyCreateServer dziedziczącej po ButtonView. " alt="" coords="319,453,518,480"/>
+<area shape="rect" id="node23" href="$MenuHockeyCreateSideBySide_8hpp.html" title="Definicja klasy MenuHockeyCreateSideBySide dziedziczącej po ButtonView. " alt="" coords="543,453,772,480"/>
+<area shape="rect" id="node24" href="$MenuHockeyLobby_8hpp.html" title="Definicja klasy MenuHockeyLobby dziedziczącej po ButtonView. " alt="" coords="2877,453,3035,480"/>
+<area shape="rect" id="node25" href="$MenuHockeyWin_8hpp.html" title="Definicja klasy MenuHockeyWin dziedziczącej po ButtonView. " alt="" coords="797,453,942,480"/>
+</map>

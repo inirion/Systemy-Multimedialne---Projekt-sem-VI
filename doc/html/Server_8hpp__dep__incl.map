@@ -1,0 +1,8 @@
+<map id="Server.hpp" name="Server.hpp">
+<area shape="rect" id="node2" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="5,80,96,107"/>
+<area shape="rect" id="node3" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="292,155,388,181"/>
+<area shape="rect" id="node4" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="171,80,327,107"/>
+<area shape="rect" id="node5" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="351,80,513,107"/>
+<area shape="rect" id="node6" href="$MenuHockeyConnectServer_8hpp.html" title="Definicja klasy MenuHockeyConnectServer dziedziczącej po ButtonView. " alt="" coords="537,80,746,107"/>
+<area shape="rect" id="node7" href="$MenuHockeyLobby_8hpp.html" title="Definicja klasy MenuHockeyLobby dziedziczącej po ButtonView. " alt="" coords="770,80,929,107"/>
+</map>

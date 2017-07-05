@@ -1,0 +1,23 @@
+<map id="MenuHockeyLobby.hpp" name="MenuHockeyLobby.hpp">
+<area shape="rect" id="node2" href="$ButtonView_8hpp.html" title="Definicja klasy ButtonView dziedziczącej po sf::Drawable. " alt="" coords="209,80,323,107"/>
+<area shape="rect" id="node28" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="1045,155,1130,181"/>
+<area shape="rect" id="node31" href="$Broadcaster_8hpp.html" title="Definicja klasy Broadcaster dziedziczącej po Networking. " alt="" coords="1347,155,1465,181"/>
+<area shape="rect" id="node5" href="$MenuButton_8hpp.html" title="Definicja klasy MenuButton dziedziczącej po sf::Drawable, Pressable, HaveName i HaveEnabled. " alt="" coords="806,229,923,256"/>
+<area shape="rect" id="node23" href="$UniCameraPointer_8hpp.html" title="Definicja klasy UniPointer. " alt="" coords="77,155,229,181"/>
+<area shape="rect" id="node8" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="1029,304,1103,331"/>
+<area shape="rect" id="node11" href="$HaveName_8hpp.html" title="Definicja bazowej klasy HaveName. " alt="" coords="1128,304,1239,331"/>
+<area shape="rect" id="node13" href="$HaveEnabled_8hpp.html" title="Definicja bazowej klasy HaveEnabled. " alt="" coords="700,304,824,331"/>
+<area shape="rect" id="node14" href="$Pressable_8hpp.html" title="Definicja bazowej klasy Pressable dziedziczącej po HaveAction, HaveHover, HavePressed, HaveVisible i HaveFocus. " alt="" coords="900,304,1005,331"/>
+<area shape="rect" id="node9" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="1326,379,1449,405"/>
+<area shape="rect" id="node10" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="1473,379,1592,405"/>
+<area shape="rect" id="node15" href="$HaveHover_8hpp.html" title="Definicja bazowej klasy HaveHover dziedziczącej po Object2d. " alt="" coords="1191,379,1301,405"/>
+<area shape="rect" id="node19" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="250,379,375,405"/>
+<area shape="rect" id="node20" href="$HaveVisible_8hpp.html" title="Definicja bazowej klasy HaveVisible. " alt="" coords="913,379,1029,405"/>
+<area shape="rect" id="node21" href="$HaveFocus_8hpp.html" title="Definicja bazowej klasy HaveFocus. " alt="" coords="1053,379,1167,405"/>
+<area shape="rect" id="node22" href="$HaveAction_8hpp.html" title="Definicja bazowej generycznej klasy HaveAction. " alt="" coords="774,379,889,405"/>
+<area shape="rect" id="node16" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="1197,453,1295,480"/>
+<area shape="rect" id="node24" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="354,229,487,256"/>
+<area shape="rect" id="node27" href="$MousePointer_8hpp.html" title="Definicja klasy MousePointer dziedziczącej po HavePressed. " alt="" coords="97,304,224,331"/>
+<area shape="rect" id="node26" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="569,304,625,331"/>
+<area shape="rect" id="node29" href="$Networking_8hpp.html" title="Definicja generycznej klasy Networking. " alt="" coords="1151,229,1261,256"/>
+</map>

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Plik źródłowy Hockey.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Hockey.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Hockey_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef HOCKEY_HPP</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define HOCKEY_HPP</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="CameraPointer_8hpp.html">CameraPointer.hpp</a>&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Conf_8hpp.html">Conf.hpp</a>&quot;</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Paddle_8hpp.html">Paddle.hpp</a>&quot;</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="PaddleController_8hpp.html">PaddleController.hpp</a>&quot;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Gate_8hpp.html">Gate.hpp</a>&quot;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Server_8hpp.html">Server.hpp</a>&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Client_8hpp.html">Client.hpp</a>&quot;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Puck_8hpp.html">Puck.hpp</a>&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define COUNTER_DELAY 300</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classHockey.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classHockey.html">Hockey</a> : <span class="keyword">public</span> sf::Drawable {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classPuck.html">Puck</a> ball;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">int</span> startCounter;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">int</span> winPoints;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    sf::Clock counterClk;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classCameraPointer.html">CameraPointer</a> &amp;pointerLeft;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classCameraPointer.html">CameraPointer</a> &amp;pointerRight;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::shared_ptr&lt;PaddleController&gt; opponentRightController;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::shared_ptr&lt;PaddleController&gt; opponentLeftController;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classServer.html">Server</a> &amp;server;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classClient.html">Client</a> &amp;client;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classPaddle.html">Paddle</a> paddleLeft;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classPaddle.html">Paddle</a> paddleRight;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classGate.html">Gate</a> gateLeft;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classGate.html">Gate</a> gateRight;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::pair&lt;int,int&gt; points;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classHockey.html">Hockey</a>(<a class="code" href="classCameraPointer.html">CameraPointer</a> &amp;pointerLeft, <a class="code" href="classCameraPointer.html">CameraPointer</a> &amp;pointerRight, <a class="code" href="classServer.html">Server</a> &amp;s, <a class="code" href="classClient.html">Client</a> &amp;c);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> draw(sf::RenderTarget&amp; target, sf::RenderStates states) <span class="keyword">const</span>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> drawCounter(sf::RenderTarget &amp;target) <span class="keyword">const</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> drawAreaBounds(sf::RenderTarget &amp;target) <span class="keyword">const</span>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> update(<span class="keywordtype">bool</span> counterCheck = <span class="keyword">true</span>);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> updateCounter();</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> checkPaddlePositions();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> sendScore();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> recvScore();</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> setStartState(<span class="keywordtype">bool</span> resetCounter=<span class="keyword">true</span>, <span class="keywordtype">bool</span> ResetControllers = <span class="keyword">true</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> setOpponentRightController(<span class="keyword">const</span> std::shared_ptr&lt;PaddleController&gt;&amp; opponentController);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> setOpponentLeftController(<span class="keyword">const</span> std::shared_ptr&lt;PaddleController&gt;&amp; opponentController);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> resetOpponentControllers();</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    sf::Time getGameTime()<span class="keyword">const</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::pair&lt;int,int&gt; getPoints()<span class="keyword">const</span>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <a class="code" href="classPuck.html">Puck</a>&amp; getBall() <span class="keyword">const</span>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> isWin(<span class="keywordtype">int</span> &amp;playerId);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="Gate_8hpp_html"><div class="ttname"><a href="Gate_8hpp.html">Gate.hpp</a></div><div class="ttdoc">Definicja klasy Gate dziedziczącej po public sf::Drawable i Object2d. </div></div>
+<div class="ttc" id="Server_8hpp_html"><div class="ttname"><a href="Server_8hpp.html">Server.hpp</a></div><div class="ttdoc">Definicja klasy Server dziedziczącej po Networking. </div></div>
+<div class="ttc" id="classPuck_html"><div class="ttname"><a href="classPuck.html">Puck</a></div><div class="ttdoc">Klasa reprezentuje krążek hokejowy. </div><div class="ttdef"><b>Definition:</b> Puck.hpp:21</div></div>
+<div class="ttc" id="classServer_html"><div class="ttname"><a href="classServer.html">Server</a></div><div class="ttdoc">Klasa służąca do nawiązania połączenia oraz komunikacji z klientem. </div><div class="ttdef"><b>Definition:</b> Server.hpp:19</div></div>
+<div class="ttc" id="classCameraPointer_html"><div class="ttname"><a href="classCameraPointer.html">CameraPointer</a></div><div class="ttdoc">Klasa wskaźnika sterowanego przez kamerkę </div><div class="ttdef"><b>Definition:</b> CameraPointer.hpp:60</div></div>
+<div class="ttc" id="classGate_html"><div class="ttname"><a href="classGate.html">Gate</a></div><div class="ttdoc">Klasa bramki w grze. </div><div class="ttdef"><b>Definition:</b> Gate.hpp:26</div></div>
+<div class="ttc" id="classPaddle_html"><div class="ttname"><a href="classPaddle.html">Paddle</a></div><div class="ttdoc">Klasa reprezentująca paletkę w grze Air Hockey. </div><div class="ttdef"><b>Definition:</b> Paddle.hpp:21</div></div>
+<div class="ttc" id="Conf_8hpp_html"><div class="ttname"><a href="Conf_8hpp.html">Conf.hpp</a></div><div class="ttdoc">Definicja statycznej klasy Conf. </div></div>
+<div class="ttc" id="Paddle_8hpp_html"><div class="ttname"><a href="Paddle_8hpp.html">Paddle.hpp</a></div><div class="ttdoc">Definicja klasy Paddle dziedziczącej po sf::Drawable i DynamicObject2d. </div></div>
+<div class="ttc" id="classClient_html"><div class="ttname"><a href="classClient.html">Client</a></div><div class="ttdoc">Klasa klienta gry. </div><div class="ttdef"><b>Definition:</b> Client.hpp:21</div></div>
+<div class="ttc" id="Puck_8hpp_html"><div class="ttname"><a href="Puck_8hpp.html">Puck.hpp</a></div><div class="ttdoc">Definicja klasy Puck dziedziczącej po sf::Drawable i DynamicObject2d. </div></div>
+<div class="ttc" id="PaddleController_8hpp_html"><div class="ttname"><a href="PaddleController_8hpp.html">PaddleController.hpp</a></div><div class="ttdoc">Definicja klasy PaddleController. </div></div>
+<div class="ttc" id="CameraPointer_8hpp_html"><div class="ttname"><a href="CameraPointer_8hpp.html">CameraPointer.hpp</a></div><div class="ttdoc">Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have...</div></div>
+<div class="ttc" id="Client_8hpp_html"><div class="ttname"><a href="Client_8hpp.html">Client.hpp</a></div><div class="ttdoc">Definicja klasy Client dziedziczącej po Networking. </div></div>
+<div class="ttc" id="classHockey_html"><div class="ttname"><a href="classHockey.html">Hockey</a></div><div class="ttdoc">Klasa gry Air Hockey. </div><div class="ttdef"><b>Definition:</b> Hockey.hpp:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

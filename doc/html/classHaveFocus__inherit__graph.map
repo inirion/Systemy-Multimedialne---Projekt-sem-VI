@@ -1,0 +1,9 @@
+<map id="HaveFocus" name="HaveFocus">
+<area shape="rect" id="node2" href="$classPressable.html" title="Bazowa klasa obiektu wciskalnego. " alt="" coords="5,80,117,107"/>
+<area shape="rect" id="node3" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="141,80,360,107"/>
+<area shape="rect" id="node5" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="384,80,512,107"/>
+<area shape="rect" id="node4" href="$classMenuButton.html" title="Klasa przycisku menu. " alt="" coords="205,155,297,181"/>
+<area shape="rect" id="node6" href="$classTextInput.html" title="Klasa reprezentująca jednoliniowe edytowalne pole tekstowe. " alt="" coords="365,155,443,181"/>
+<area shape="rect" id="node7" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="467,155,573,181"/>
+<area shape="rect" id="node8" href="$classTrackBar.html" title="Generyczna klasa TrackBar&#39;a. " alt="" coords="467,229,573,256"/>
+</map>

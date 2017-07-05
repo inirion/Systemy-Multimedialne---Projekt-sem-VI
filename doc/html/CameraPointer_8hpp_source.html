@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Air Hockey: Plik źródłowy CameraPointer.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Air Hockey
+   &#160;<span id="projectnumber">0.3a</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CameraPointer.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="CameraPointer_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Pointer.hpp</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 17.03.2017</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: jakub</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifndef CAMERAPOINTER_HPP_</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define CAMERAPOINTER_HPP_</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define ALPHA(x)  (1.f / (1000.f * x + 2) + 0.5)</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define _USE_MATH_DEFINES</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;SFML/Graphics.hpp&gt;</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;opencv2/opencv.hpp&gt;</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Conf_8hpp.html">Conf.hpp</a>&quot;</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="S_8hpp.html">S.hpp</a>&quot;</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="HavePressed_8hpp.html">HavePressed.hpp</a>&quot;</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">float</span> sqdist(sf::Vector2f, sf::Vector2f);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">float</span> sqdist(cv::Point, cv::Point);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">class </span><a class="code" href="classCameraPointer.html">CameraPointer</a>;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classCamPoint.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCamPoint.html">CamPoint</a> : <span class="keyword">public</span> <a class="code" href="classHavePressed.html">HavePressed</a>{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">friend</span> <a class="code" href="classCameraPointer.html">CameraPointer</a>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    cv::KeyPoint key;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    cv::KeyPoint lastKey;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    sf::Vector2f pos;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    sf::Vector2f targetPos, lastTargetPos;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">float</span> lastDist;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classCamPoint.html">CamPoint</a>();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classCameraPointer.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCameraPointer.html">CameraPointer</a> : <span class="keyword">public</span> sf::Drawable{</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classCameraPointer.html">CameraPointer</a>(sf::RectangleShape&amp; rs);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> draw(sf::RenderTarget&amp; target, sf::RenderStates states)<span class="keyword">const</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> computePointers(cv::Mat&amp; frame, <a class="code" href="classCameraPointer.html">CameraPointer</a>* secondPointer = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> updatePointerPos(<span class="keywordtype">float</span> multiplier=1.f);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    cv::Mat detect(cv::Mat&amp; frame, cv::Mat&amp; frameLast, <a class="code" href="classCameraPointer.html">CameraPointer</a>* secondPointer = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    sf::Vector2f gamePos(cv::Point, cv::Mat&amp; frame)<span class="keyword">const</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    sf::Vector2f getPointerPos(<span class="keywordtype">int</span> index = 0) <span class="keyword">const</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    sf::Vector2f getPointerGamePos(<span class="keywordtype">int</span> index = 0) <span class="keyword">const</span>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    sf::Vector2f getPointerPosRelative(<span class="keywordtype">int</span> index = 0)<span class="keyword">const</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> setTargetPos(<span class="keywordtype">int</span> index, sf::Vector2f pos);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> setTargetGamePos(<span class="keywordtype">int</span> index, sf::Vector2f pos);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> isPressed()<span class="keyword">const</span>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classCamPoint.html">CamPoint</a> camPoint[2];</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::vector&lt;cv::KeyPoint&gt; points;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::vector&lt;cv::Vec3f&gt; circles;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    cv::SimpleBlobDetector::Params dp;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cv::Ptr&lt;cv::SimpleBlobDetector&gt; detector;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cv::Mat frameDst;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    sf::RectangleShape&amp; captureBackground;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">float</span> radius;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> filterPoints();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* CAMERAPOINTER_HPP_ */</span><span class="preprocessor"></span></div><div class="ttc" id="classCameraPointer_html"><div class="ttname"><a href="classCameraPointer.html">CameraPointer</a></div><div class="ttdoc">Klasa wskaźnika sterowanego przez kamerkę </div><div class="ttdef"><b>Definition:</b> CameraPointer.hpp:60</div></div>
+<div class="ttc" id="HavePressed_8hpp_html"><div class="ttname"><a href="HavePressed_8hpp.html">HavePressed.hpp</a></div><div class="ttdoc">Definicja bazowej klasy HavePressed. </div></div>
+<div class="ttc" id="Conf_8hpp_html"><div class="ttname"><a href="Conf_8hpp.html">Conf.hpp</a></div><div class="ttdoc">Definicja statycznej klasy Conf. </div></div>
+<div class="ttc" id="classCamPoint_html"><div class="ttname"><a href="classCamPoint.html">CamPoint</a></div><div class="ttdoc">Obiekty tej klasy są zawarte w klasie CameraPointer. </div><div class="ttdef"><b>Definition:</b> CameraPointer.hpp:47</div></div>
+<div class="ttc" id="S_8hpp_html"><div class="ttname"><a href="S_8hpp.html">S.hpp</a></div><div class="ttdoc">Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. </div></div>
+<div class="ttc" id="classHavePressed_html"><div class="ttname"><a href="classHavePressed.html">HavePressed</a></div><div class="ttdoc">Bazowa klasa obiektu posiadający stan wciśnięcia. </div><div class="ttdef"><b>Definition:</b> HavePressed.hpp:23</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="TrackBar.hpp" name="TrackBar.hpp">
+<area shape="rect" id="node5" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="227,80,302,107"/>
+<area shape="rect" id="node8" href="$HaveName_8hpp.html" title="Definicja bazowej klasy HaveName. " alt="" coords="1055,80,1165,107"/>
+<area shape="rect" id="node10" href="$Pressable_8hpp.html" title="Definicja bazowej klasy Pressable dziedziczącej po HaveAction, HaveHover, HavePressed, HaveVisible i HaveFocus. " alt="" coords="664,80,769,107"/>
+<area shape="rect" id="node6" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="149,155,271,181"/>
+<area shape="rect" id="node7" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="5,155,124,181"/>
+<area shape="rect" id="node12" href="$HaveHover_8hpp.html" title="Definicja bazowej klasy HaveHover dziedziczącej po Object2d. " alt="" coords="1127,155,1237,181"/>
+<area shape="rect" id="node15" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="509,155,634,181"/>
+<area shape="rect" id="node16" href="$HaveVisible_8hpp.html" title="Definicja bazowej klasy HaveVisible. " alt="" coords="659,155,775,181"/>
+<area shape="rect" id="node17" href="$HaveFocus_8hpp.html" title="Definicja bazowej klasy HaveFocus. " alt="" coords="799,155,912,181"/>
+<area shape="rect" id="node18" href="$HaveAction_8hpp.html" title="Definicja bazowej generycznej klasy HaveAction. " alt="" coords="937,155,1051,181"/>
+<area shape="rect" id="node13" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="1114,229,1213,256"/>
+</map>

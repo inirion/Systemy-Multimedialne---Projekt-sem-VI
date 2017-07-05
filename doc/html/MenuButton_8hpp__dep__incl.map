@@ -1,0 +1,16 @@
+<map id="MenuButton.hpp" name="MenuButton.hpp">
+<area shape="rect" id="node2" href="$ButtonView_8hpp.html" title="Definicja klasy ButtonView dziedziczącej po sf::Drawable. " alt="" coords="836,80,949,107"/>
+<area shape="rect" id="node3" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="845,229,941,256"/>
+<area shape="rect" id="node4" href="$MenuMain_8hpp.html" title="Definicja klasy MenuMain dziedziczącej po ButtonView. " alt="" coords="23,155,130,181"/>
+<area shape="rect" id="node5" href="$MenuOptionsFirst_8hpp.html" title="Definicja klasy MenuOptionsFirst dziedziczącej po ButtonView. " alt="" coords="155,155,305,181"/>
+<area shape="rect" id="node6" href="$MenuOptionsSecond_8hpp.html" title="Definicja klasy MenuOptionsSecond dziedziczącej po ButtonView. " alt="" coords="330,155,498,181"/>
+<area shape="rect" id="node7" href="$MenuDefaultsAsk_8hpp.html" title="Definicja klasy MenuDefaultsAsk dziedziczącej po ButtonView. " alt="" coords="523,155,673,181"/>
+<area shape="rect" id="node8" href="$MenuPaint_8hpp.html" title="Definicja klasy MenuPaint dziedziczącej po ButtonView. " alt="" coords="698,155,807,181"/>
+<area shape="rect" id="node9" href="$MenuHockey_8hpp.html" title="Definicja klasy MenuHockey dziedziczącej po ButtonView. " alt="" coords="831,155,954,181"/>
+<area shape="rect" id="node10" href="$MenuHockeyMulti_8hpp.html" title="Definicja klasy MenuHockeyMulti dziedziczącej po ButtonView. " alt="" coords="979,155,1129,181"/>
+<area shape="rect" id="node11" href="$MenuHockeyConnectServer_8hpp.html" title="Definicja klasy MenuHockeyConnectServer dziedziczącej po ButtonView. " alt="" coords="1153,155,1363,181"/>
+<area shape="rect" id="node12" href="$MenuHockeyCreateServer_8hpp.html" title="Definicja klasy MenuHockeyCreateServer dziedziczącej po ButtonView. " alt="" coords="1387,155,1585,181"/>
+<area shape="rect" id="node13" href="$MenuHockeyCreateSideBySide_8hpp.html" title="Definicja klasy MenuHockeyCreateSideBySide dziedziczącej po ButtonView. " alt="" coords="1610,155,1839,181"/>
+<area shape="rect" id="node14" href="$MenuHockeyLobby_8hpp.html" title="Definicja klasy MenuHockeyLobby dziedziczącej po ButtonView. " alt="" coords="1864,155,2023,181"/>
+<area shape="rect" id="node15" href="$MenuHockeyWin_8hpp.html" title="Definicja klasy MenuHockeyWin dziedziczącej po ButtonView. " alt="" coords="2047,155,2192,181"/>
+</map>

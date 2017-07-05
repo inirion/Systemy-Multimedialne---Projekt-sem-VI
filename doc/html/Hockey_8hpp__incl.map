@@ -1,0 +1,17 @@
+<map id="Hockey.hpp" name="Hockey.hpp">
+<area shape="rect" id="node4" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="439,304,572,331"/>
+<area shape="rect" id="node6" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="1032,379,1107,405"/>
+<area shape="rect" id="node11" href="$Paddle_8hpp.html" title="Definicja klasy Paddle dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="650,229,737,256"/>
+<area shape="rect" id="node17" href="$PaddleController_8hpp.html" title="Definicja klasy PaddleController. " alt="" coords="594,80,737,107"/>
+<area shape="rect" id="node18" href="$Puck_8hpp.html" title="Definicja klasy Puck dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="736,155,813,181"/>
+<area shape="rect" id="node20" href="$Gate_8hpp.html" title="Definicja klasy Gate dziedziczącej po public sf::Drawable i Object2d. " alt="" coords="957,304,1032,331"/>
+<area shape="rect" id="node21" href="$Server_8hpp.html" title="Definicja klasy Server dziedziczącej po Networking. " alt="" coords="1229,80,1315,107"/>
+<area shape="rect" id="node25" href="$Client_8hpp.html" title="Definicja klasy Client dziedziczącej po Networking. " alt="" coords="1380,80,1460,107"/>
+<area shape="rect" id="node9" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="368,379,424,405"/>
+<area shape="rect" id="node10" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="448,379,573,405"/>
+<area shape="rect" id="node7" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="1001,453,1124,480"/>
+<area shape="rect" id="node8" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="1149,453,1267,480"/>
+<area shape="rect" id="node13" href="$DynamicObject2d_8hpp.html" title="Definicja bazowej klasy DynamicObject2d dziedziczącej po Object2d. " alt="" coords="699,304,850,331"/>
+<area shape="rect" id="node14" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="841,379,940,405"/>
+<area shape="rect" id="node23" href="$Networking_8hpp.html" title="Definicja generycznej klasy Networking. " alt="" coords="1406,155,1517,181"/>
+</map>

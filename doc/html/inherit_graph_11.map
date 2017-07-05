@@ -1,0 +1,41 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node2" href="$classButtonView.html" title="Bazowa klasa widoku z przyciskami. " alt="" coords="685,309,773,336"/>
+<area shape="rect" id="node15" href="$classCameraPointer.html" title="Klasa wskaźnika sterowanego przez kamerkę " alt="" coords="675,360,783,387"/>
+<area shape="rect" id="node16" href="$classGate.html" title="Klasa bramki w grze. " alt="" coords="703,157,754,184"/>
+<area shape="rect" id="node17" href="$classHockey.html" title="Klasa gry Air Hockey. " alt="" coords="695,208,762,235"/>
+<area shape="rect" id="node18" href="$classMenuButton.html" title="Klasa przycisku menu. " alt="" coords="683,613,775,640"/>
+<area shape="rect" id="node19" href="$classPaddle.html" title="Klasa reprezentująca paletkę w grze Air Hockey. " alt="" coords="697,411,760,437"/>
+<area shape="rect" id="node20" href="$classProgram.html" title="Główna klasa aplikacji. " alt="" coords="693,259,764,285"/>
+<area shape="rect" id="node21" href="$classPuck.html" title="Klasa reprezentuje krążek hokejowy. " alt="" coords="703,461,755,488"/>
+<area shape="rect" id="node22" href="$classTextInput.html" title="Klasa reprezentująca jednoliniowe edytowalne pole tekstowe. " alt="" coords="690,512,767,539"/>
+<area shape="rect" id="node23" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="676,563,781,589"/>
+<area shape="rect" id="node3" href="$classMenuDefaultsAsk.html" title="Klasa reprezentująca widok menu z pytaniem o przywrócenie domyślnych ustawień. " alt="" coords="870,157,995,184"/>
+<area shape="rect" id="node4" href="$classMenuHockey.html" title="Klasa reprezentująca widok menu wyboru trybu singleplayer i multiplayer. " alt="" coords="883,208,982,235"/>
+<area shape="rect" id="node5" href="$classMenuHockeyConnectServer.html" title="Klasa reprezentująca widok menu wyboru serwera. " alt="" coords="841,259,1025,285"/>
+<area shape="rect" id="node6" href="$classMenuHockeyCreateServer.html" title="Klasa reprezentująca widok menu tworzenia serwera. " alt="" coords="845,309,1020,336"/>
+<area shape="rect" id="node7" href="$classMenuHockeyCreateSideBySide.html" title="Klasa reprezentująca widok menu tworzenia gry side by side. " alt="" coords="831,360,1035,387"/>
+<area shape="rect" id="node8" href="$classMenuHockeyLobby.html" title="Klasa reprezentująca widok lobby serwera oczekującego na gracza. " alt="" coords="866,411,999,437"/>
+<area shape="rect" id="node9" href="$classMenuHockeyMulti.html" title="Klasa reprezentująca widok menu wyboru trybu side by side, tworzenia serwera i łączenia z serwerem..." alt="" coords="869,461,996,488"/>
+<area shape="rect" id="node10" href="$classMenuHockeyWin.html" title="Klasa reprezentująca widok menu wygranej gry z możliwością ponownej rozgrywki. " alt="" coords="873,512,993,539"/>
+<area shape="rect" id="node11" href="$classMenuMain.html" title="Klasa reprezentująca widok menu głównego widocznego po uruchomieniu programu. " alt="" coords="891,563,974,589"/>
+<area shape="rect" id="node12" href="$classMenuOptionsFirst.html" title="Klasa reprezentująca menu pierwszej strony opcji. " alt="" coords="870,5,995,32"/>
+<area shape="rect" id="node13" href="$classMenuOptionsSecond.html" title="Klasa reprezentująca menu drugiej strony opcji. " alt="" coords="861,56,1004,83"/>
+<area shape="rect" id="node14" href="$classMenuPaint.html" title="Klasa reprezentująca menu paint testu z przyciskiem do czyszczenia płótna. " alt="" coords="891,107,975,133"/>
+<area shape="rect" id="node24" href="$classTrackBar.html" title="Generyczna klasa TrackBar&#39;a. " alt="" coords="879,613,986,640"/>
+<area shape="rect" id="node25" href="$classHaveAction.html" title="Bazowa klasa obiektu z ustawialną akcją typu std::function&lt;void(T)&gt; " alt="" coords="183,360,305,387"/>
+<area shape="rect" id="node26" href="$classPressable.html" title="Bazowa klasa obiektu wciskalnego. " alt="" coords="461,461,573,488"/>
+<area shape="rect" id="node27" href="$classHaveAction.html" title="HaveAction\&lt; const MenuButton &amp; \&gt;" alt="" coords="128,613,360,640"/>
+<area shape="rect" id="node28" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="408,613,627,640"/>
+<area shape="rect" id="node29" href="$classHaveAction.html" title="HaveAction\&lt; void \&gt;" alt="" coords="175,411,313,437"/>
+<area shape="rect" id="node30" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="453,512,581,539"/>
+<area shape="rect" id="node31" href="$classHaveEnabled.html" title="Bazowa klasa obiektu włączalnego. " alt="" coords="468,664,567,691"/>
+<area shape="rect" id="node32" href="$classHaveFocus.html" title="Bazowa klasa obiektu &quot;focusowalnego&quot;. " alt="" coords="200,461,288,488"/>
+<area shape="rect" id="node33" href="$classHaveName.html" title="Bazowa klasa obiektu nazywalnego. " alt="" coords="474,563,561,589"/>
+<area shape="rect" id="node34" href="$classHavePressed.html" title="Bazowa klasa obiektu posiadający stan wciśnięcia. " alt="" coords="194,664,294,691"/>
+<area shape="rect" id="node35" href="$classCamPoint.html" title="Obiekty tej klasy są zawarte w klasie CameraPointer. " alt="" coords="478,715,557,741"/>
+<area shape="rect" id="node36" href="$classMousePointer.html" title="Klasa reprezentująca mysz. " alt="" coords="466,765,569,792"/>
+<area shape="rect" id="node37" href="$classHaveVisible.html" title="Bazowa klasa obiektu posiadający stan widoczności. " alt="" coords="199,512,289,539"/>
+<area shape="rect" id="node38" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="5,309,80,336"/>
+<area shape="rect" id="node39" href="$classDynamicObject2d.html" title="Bazowa klasa dynamicznego obiektu. " alt="" coords="455,411,580,437"/>
+<area shape="rect" id="node40" href="$classHaveHover.html" title="Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. " alt="" coords="201,563,287,589"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Paddle.hpp" name="Paddle.hpp">
+<area shape="rect" id="node2" href="$Puck_8hpp.html" title="Definicja klasy Puck dziedziczącej po sf::Drawable i DynamicObject2d. " alt="" coords="445,80,523,107"/>
+<area shape="rect" id="node6" href="$Hockey_8hpp.html" title="Definicja klasy Hockey dziedzicząca po sf::Drawable. " alt="" coords="511,229,601,256"/>
+<area shape="rect" id="node3" href="$PaddleController_8hpp.html" title="Definicja klasy PaddleController. " alt="" coords="329,155,471,181"/>
+<area shape="rect" id="node4" href="$AIController_8hpp.html" title="Definicja klasy AIController dziedziczącej po PaddleController. " alt="" coords="5,229,120,256"/>
+<area shape="rect" id="node7" href="$LanControllerClient_8hpp.html" title="Definicja klasy LanControllerClient dziedzicząca po PaddleController. " alt="" coords="145,229,301,256"/>
+<area shape="rect" id="node8" href="$LanControllerServer_8hpp.html" title="Definicja klasy LanControllerServer dziedzicząca po PaddleController. " alt="" coords="325,229,486,256"/>
+<area shape="rect" id="node5" href="$Program_8hpp.html" title="Definicja klasy Program dziedziczącej po sf::Drawable. " alt="" coords="265,304,361,331"/>
+</map>

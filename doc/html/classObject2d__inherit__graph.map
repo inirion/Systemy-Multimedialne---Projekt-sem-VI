@@ -1,0 +1,14 @@
+<map id="Object2d" name="Object2d">
+<area shape="rect" id="node2" href="$classDynamicObject2d.html" title="Bazowa klasa dynamicznego obiektu. " alt="" coords="55,80,181,107"/>
+<area shape="rect" id="node5" href="$classGate.html" title="Klasa bramki w grze. " alt="" coords="250,80,301,107"/>
+<area shape="rect" id="node6" href="$classHaveHover.html" title="Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. " alt="" coords="348,80,435,107"/>
+<area shape="rect" id="node3" href="$classPaddle.html" title="Klasa reprezentująca paletkę w grze Air Hockey. " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" href="$classPuck.html" title="Klasa reprezentuje krążek hokejowy. " alt="" coords="92,155,144,181"/>
+<area shape="rect" id="node7" href="$classPressable.html" title="Bazowa klasa obiektu wciskalnego. " alt="" coords="169,155,281,181"/>
+<area shape="rect" id="node8" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="305,155,523,181"/>
+<area shape="rect" id="node10" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="547,155,675,181"/>
+<area shape="rect" id="node9" href="$classMenuButton.html" title="Klasa przycisku menu. " alt="" coords="368,229,460,256"/>
+<area shape="rect" id="node11" href="$classTextInput.html" title="Klasa reprezentująca jednoliniowe edytowalne pole tekstowe. " alt="" coords="529,229,606,256"/>
+<area shape="rect" id="node12" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="631,229,736,256"/>
+<area shape="rect" id="node13" href="$classTrackBar.html" title="Generyczna klasa TrackBar&#39;a. " alt="" coords="630,304,737,331"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Pressable.hpp" name="Pressable.hpp">
+<area shape="rect" id="node4" href="$HaveHover_8hpp.html" title="Definicja bazowej klasy HaveHover dziedziczącej po Object2d. " alt="" coords="79,80,190,107"/>
+<area shape="rect" id="node8" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="516,80,641,107"/>
+<area shape="rect" id="node9" href="$HaveVisible_8hpp.html" title="Definicja bazowej klasy HaveVisible. " alt="" coords="666,80,782,107"/>
+<area shape="rect" id="node10" href="$HaveFocus_8hpp.html" title="Definicja bazowej klasy HaveFocus. " alt="" coords="806,80,919,107"/>
+<area shape="rect" id="node11" href="$HaveAction_8hpp.html" title="Definicja bazowej generycznej klasy HaveAction. " alt="" coords="377,80,492,107"/>
+<area shape="rect" id="node5" href="$Object2d_8hpp.html" title="Definicja klasy Object2d. " alt="" coords="85,155,184,181"/>
+</map>

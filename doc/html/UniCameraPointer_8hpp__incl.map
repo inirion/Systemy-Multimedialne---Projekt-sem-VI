@@ -1,0 +1,9 @@
+<map id="UniCameraPointer.hpp" name="UniCameraPointer.hpp">
+<area shape="rect" id="node2" href="$CameraPointer_8hpp.html" title="Definicja klasy CameraPointer dziedziczącej po sf::Drawable oraz klasy CamPoint dziedziczącej po Have..." alt="" coords="353,80,487,107"/>
+<area shape="rect" id="node10" href="$MousePointer_8hpp.html" title="Definicja klasy MousePointer dziedziczącej po HavePressed. " alt="" coords="570,80,697,107"/>
+<area shape="rect" id="node5" href="$Conf_8hpp.html" title="Definicja statycznej klasy Conf. " alt="" coords="173,155,248,181"/>
+<area shape="rect" id="node8" href="$S_8hpp.html" title="Definicja przestrzeni nazw S która zawiera stałe liteały tekstowe. " alt="" coords="272,155,328,181"/>
+<area shape="rect" id="node9" href="$HavePressed_8hpp.html" title="Definicja bazowej klasy HavePressed. " alt="" coords="571,155,696,181"/>
+<area shape="rect" id="node6" href="$ConfDetector_8hpp.html" title="Definicja statycznej klasy ConfDetector. " alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node7" href="$ConfCapture_8hpp.html" title="Definicja statycznej klasy ConfCapture. " alt="" coords="153,229,271,256"/>
+</map>

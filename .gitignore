@@ -1,0 +1,16 @@
+*.o
+.cproject
+.settings
+.project
+demo
+airhockey
+.vs
+packages
+x64
+*.sln
+*.db
+*.vcxproj
+*.filters
+program.conf
+*.gch
+*.md5

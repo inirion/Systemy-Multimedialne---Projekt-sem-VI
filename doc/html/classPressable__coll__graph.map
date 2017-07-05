@@ -1,0 +1,8 @@
+<map id="Pressable&lt; T &gt;" name="Pressable&lt; T &gt;">
+<area shape="rect" id="node2" href="$classHaveAction.html" title="Bazowa klasa obiektu z ustawialną akcją typu std::function&lt;void(T)&gt; " alt="" coords="5,81,127,108"/>
+<area shape="rect" id="node3" href="$classHaveHover.html" title="Bazowa klasa obiektu posiadającego stan wskazywania przez kursor. " alt="" coords="151,81,237,108"/>
+<area shape="rect" id="node4" href="$classObject2d.html" title="Bazowa klasa obiektów posiadających pozycję, rozmiar i kąt obrotu. " alt="" coords="157,5,231,32"/>
+<area shape="rect" id="node5" href="$classHavePressed.html" title="Bazowa klasa obiektu posiadający stan wciśnięcia. " alt="" coords="261,81,361,108"/>
+<area shape="rect" id="node6" href="$classHaveVisible.html" title="Bazowa klasa obiektu posiadający stan widoczności. " alt="" coords="386,81,477,108"/>
+<area shape="rect" id="node7" href="$classHaveFocus.html" title="Bazowa klasa obiektu &quot;focusowalnego&quot;. " alt="" coords="501,81,589,108"/>
+</map>

@@ -1,0 +1,19 @@
+Zapamiętanie poprzedniej ramki Odczyt ramki z kamerki internetowej
+Odbicie lustrzane ramki poziomo
+Utworzenie ramki diff = |aktualna - poprzednia|
+Konwersja ramki diff do skali szarości
+Progowanie ramki diff 
+Erozja ramki diff
+Ustawienie białych pixeli w pozycjach poprzednich punktów wskaźnika
+Rozszerzenie białych pixeli
+Konwersja ramki z kamery do przestrzeni HSV
+Utworzenie kopi ramki z kamery w skali szarości
+Wyszukanie okręgów na poprzedniej ramce
+Utworzenie ramki circleMask
+Utworzenie mapy bitowej dst metodą cv::inRange() na podstawie obrazu w HSV
+Filtracja mapy przez erozje i rozszerzanie
+Dodanie circleMask do diff
+Pomnożenie mapy dst przez diff
+Wykrycie punktów przez cv::SimpleBlobDetector na mapie bitowej dst
+Sortowanie punktów na podstawie rozmiaru i zmniejszenie ich ilości do zadanej wartości
+Przypisanie pozycji punktów do wskaźnika

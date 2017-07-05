@@ -1,0 +1,6 @@
+<map id="Graficzna hierarchia klas" name="Graficzna hierarchia klas">
+<area shape="rect" id="node1" href="$classPaddleController.html" title="Abstrakcyjna bazowa klasa kontrolera paletki. Jest używana w klasie Hockey. " alt="" coords="5,56,123,83"/>
+<area shape="rect" id="node2" href="$classAIController.html" title="Klasa kontrolera paletki. " alt="" coords="193,5,284,32"/>
+<area shape="rect" id="node3" href="$classLanControllerClient.html" title="Klasa sieciowego kontrolera paletki przeciwnika po stronie klienta. " alt="" coords="173,56,304,83"/>
+<area shape="rect" id="node4" href="$classLanControllerServer.html" title="Klasa sieciowego kontrolera paletki przeciwnika po stronie serwera. " alt="" coords="171,107,307,133"/>
+</map>

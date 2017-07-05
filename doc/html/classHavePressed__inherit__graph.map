@@ -1,0 +1,11 @@
+<map id="HavePressed" name="HavePressed">
+<area shape="rect" id="node2" href="$classCamPoint.html" title="Obiekty tej klasy są zawarte w klasie CameraPointer. " alt="" coords="223,5,302,32"/>
+<area shape="rect" id="node3" href="$classMousePointer.html" title="Klasa reprezentująca mysz. " alt="" coords="211,56,314,83"/>
+<area shape="rect" id="node4" href="$classPressable.html" title="Bazowa klasa obiektu wciskalnego. " alt="" coords="207,107,319,133"/>
+<area shape="rect" id="node5" href="$classPressable.html" title="Pressable\&lt; const MenuButton &amp;\&gt;" alt="" coords="153,157,372,184"/>
+<area shape="rect" id="node7" href="$classPressable.html" title="Pressable\&lt; void \&gt;" alt="" coords="199,208,327,235"/>
+<area shape="rect" id="node6" href="$classMenuButton.html" title="Klasa przycisku menu. " alt="" coords="427,157,519,184"/>
+<area shape="rect" id="node8" href="$classTextInput.html" title="Klasa reprezentująca jednoliniowe edytowalne pole tekstowe. " alt="" coords="434,208,511,235"/>
+<area shape="rect" id="node9" href="$classTrackBarBase.html" title="Bazowa klasa TrackBar&#39;a. " alt="" coords="420,259,525,285"/>
+<area shape="rect" id="node10" href="$classTrackBar.html" title="Generyczna klasa TrackBar&#39;a. " alt="" coords="573,259,680,285"/>
+</map>
